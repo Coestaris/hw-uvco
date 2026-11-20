@@ -1,0 +1,626 @@
+{
+  "categories": [
+    "regulator"
+  ],
+  "description": "8 V positive fixed linear regulator",
+  "document": {
+    "identity": {
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 16,
+          "section": "Document identity / ordering information",
+          "source_text": "The ordering table explicitly lists UMW 78L08-150, marking 78L08, in SOT-89."
+        }
+      ],
+      "family_members": [
+        "78L08-150"
+      ],
+      "package_variant": "SOT-89",
+      "requested_mpn": "78L08-150",
+      "status": "exact"
+    },
+    "manufacturer": "UMW (UTD Semiconductor Co., Limited)",
+    "pages": 17,
+    "path": "78L08-150.pdf",
+    "sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35"
+  },
+  "extracted_at": "2026-09-23T12:37:32.695247+00:00",
+  "extractor_version": "manual-evidence-2",
+  "family": "UMW 78Lxx-150",
+  "manufacturer": "UMW (UTD Semiconductor Co., Limited)",
+  "missing": [
+    "Current-limit threshold, thermal-shutdown threshold, PSRR versus frequency, reverse-current behavior, startup timing, and simulation model are not numerically published."
+  ],
+  "models": [],
+  "mpn": "78L08-150",
+  "packages": [
+    {
+      "applicable_mpns": [
+        "78L08-150"
+      ],
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 16,
+          "section": "Package",
+          "source_text": "Ordering table assigns UMW 78L08-150 to SOT-89."
+        }
+      ],
+      "exposed_pad": false,
+      "manufacturer_name": "SOT-89",
+      "pin_count": 3,
+      "thermal_pad": false
+    }
+  ],
+  "pins": [
+    {
+      "active_level": null,
+      "aliases": [],
+      "description": "Regulated output",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 1,
+          "section": "Pinning information",
+          "source_text": "Pin 1: VOUT (Regulated output)."
+        }
+      ],
+      "functions": [
+        "Regulated output"
+      ],
+      "internal_pull": null,
+      "name": "VOUT",
+      "numbers": [
+        "1"
+      ],
+      "output_structure": null,
+      "power_domain": null,
+      "type": "power_out"
+    },
+    {
+      "active_level": null,
+      "aliases": [],
+      "description": "Ground; package tab",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 1,
+          "section": "Pinning information",
+          "source_text": "Pin 2: GND (Ground; package tab)."
+        }
+      ],
+      "functions": [
+        "Ground; package tab"
+      ],
+      "internal_pull": null,
+      "name": "GND",
+      "numbers": [
+        "2"
+      ],
+      "output_structure": null,
+      "power_domain": null,
+      "type": "ground"
+    },
+    {
+      "active_level": null,
+      "aliases": [],
+      "description": "Input supply",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 1,
+          "section": "Pinning information",
+          "source_text": "Pin 3: VIN (Input supply)."
+        }
+      ],
+      "functions": [
+        "Input supply"
+      ],
+      "internal_pull": null,
+      "name": "VIN",
+      "numbers": [
+        "3"
+      ],
+      "output_structure": null,
+      "power_domain": null,
+      "type": "power_in"
+    }
+  ],
+  "quality": {
+    "base_specs": 95,
+    "category_specs": 95,
+    "evidence": 100,
+    "identity": 100,
+    "overall": 96,
+    "pinout": 100
+  },
+  "schema_version": 1,
+  "specs": [
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for input_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 35,
+      "name": "input_voltage",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for power_dissipation."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.8,
+      "name": "power_dissipation",
+      "unit": "W"
+    },
+    {
+      "applicability": null,
+      "classification": "recommended_operating_condition",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for junction_temperature."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 105,
+      "min": -40,
+      "name": "junction_temperature",
+      "unit": "degC"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for storage_temperature."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 150,
+      "min": -55,
+      "name": "storage_temperature",
+      "unit": "degC"
+    },
+    {
+      "applicability": null,
+      "classification": "recommended_operating_condition",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 1,
+          "section": "Features",
+          "source_text": "Manufacturer features row for output_current."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.15,
+      "name": "output_current",
+      "unit": "A"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "junction_temperature",
+          "unit": "degC",
+          "value": 25
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for output_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 8.08,
+      "min": 7.92,
+      "name": "output_voltage",
+      "typ": 8,
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "range",
+          "parameter": "output_current",
+          "unit": "mA",
+          "value": [
+            1,
+            130
+          ]
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for load_regulation."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 80,
+      "name": "load_regulation",
+      "typ": 15,
+      "unit": "mV"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "range",
+          "parameter": "output_current",
+          "unit": "mA",
+          "value": [
+            1,
+            70
+          ]
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for load_regulation."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 40,
+      "name": "load_regulation",
+      "typ": 8,
+      "unit": "mV"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "range",
+          "parameter": "input_voltage",
+          "unit": "V",
+          "value": [
+            10.5,
+            23
+          ]
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for line_regulation."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 175,
+      "name": "line_regulation",
+      "typ": 10,
+      "unit": "mV"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "range",
+          "parameter": "input_voltage",
+          "unit": "V",
+          "value": [
+            11,
+            23
+          ]
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for line_regulation."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 125,
+      "name": "line_regulation",
+      "typ": 8,
+      "unit": "mV"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "input_voltage",
+          "unit": "V",
+          "value": 14
+        },
+        {
+          "operator": "=",
+          "parameter": "output_current",
+          "unit": "mA",
+          "value": 40
+        },
+        {
+          "operator": "range",
+          "parameter": "junction_temperature",
+          "unit": "degC",
+          "value": [
+            0,
+            25
+          ]
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for quiescent_current."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 5.5,
+      "name": "quiescent_current",
+      "typ": 2,
+      "unit": "mA"
+    },
+    {
+      "applicability": null,
+      "classification": "typical_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "range",
+          "parameter": "frequency_band",
+          "unit": "Hz",
+          "value": [
+            10,
+            100000
+          ]
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for output_noise_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "name": "output_noise_voltage",
+      "typ": 49,
+      "unit": "uV"
+    },
+    {
+      "applicability": null,
+      "classification": "typical_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "output_current",
+          "unit": "mA",
+          "value": 5
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for output_voltage_temperature_coefficient."
+        }
+      ],
+      "fact_kind": "fact",
+      "name": "output_voltage_temperature_coefficient",
+      "typ": 0.75,
+      "unit": "mV/degC"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "range",
+          "parameter": "input_voltage",
+          "unit": "V",
+          "value": [
+            11,
+            23
+          ]
+        },
+        {
+          "operator": "=",
+          "parameter": "frequency",
+          "unit": "Hz",
+          "value": 120
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for ripple_rejection."
+        }
+      ],
+      "fact_kind": "fact",
+      "min": 36,
+      "name": "ripple_rejection",
+      "typ": 45,
+      "unit": "dB"
+    },
+    {
+      "applicability": null,
+      "classification": "typical_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "junction_temperature",
+          "unit": "degC",
+          "value": 25
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for dropout_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "name": "dropout_voltage",
+      "typ": 1.7,
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "application_recommendation",
+      "conditions": [
+        {
+          "operator": "text",
+          "parameter": "placement",
+          "unit": null,
+          "value": "close to regulator"
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for input_capacitance."
+        }
+      ],
+      "fact_kind": "recommendation",
+      "min": 0.33,
+      "name": "input_capacitance",
+      "unit": "uF"
+    },
+    {
+      "applicability": null,
+      "classification": "application_recommendation",
+      "conditions": [
+        {
+          "operator": "text",
+          "parameter": "placement",
+          "unit": null,
+          "value": "close to regulator"
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "fe2f4e8f0d975d520f2b95524c0f0babcd15da32bcd9aa1baec02932147cfb35",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for output_capacitance."
+        }
+      ],
+      "fact_kind": "recommendation",
+      "min": 0.1,
+      "name": "output_capacitance",
+      "unit": "uF"
+    }
+  ],
+  "status": "active",
+  "warnings": []
+}

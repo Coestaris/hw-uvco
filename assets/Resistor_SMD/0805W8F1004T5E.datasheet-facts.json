@@ -1,0 +1,310 @@
+{
+  "categories": [
+    "resistor"
+  ],
+  "description": "0805 thick-film chip resistor",
+  "document": {
+    "identity": {
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+          "method": "table",
+          "page": 2,
+          "section": "Document identity / ordering information",
+          "source_text": "The manufacturer part-number system decodes 0805W8F1004T5E as an 0805 W8 F-value tape/reel part."
+        }
+      ],
+      "family_members": [
+        "0805W8F1004T5E"
+      ],
+      "package_variant": "0805",
+      "requested_mpn": "0805W8F1004T5E",
+      "status": "family"
+    },
+    "manufacturer": "Uniroyal Electronics Global Co., Ltd.",
+    "pages": 9,
+    "path": "0805W8F1004T5E.pdf",
+    "sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef"
+  },
+  "extracted_at": "2026-09-23T12:37:32.695247+00:00",
+  "extractor_version": "manual-evidence-2",
+  "family": "Thick Film Chip Resistors",
+  "manufacturer": "Uniroyal Electronics Global Co., Ltd.",
+  "missing": [
+    "Terminal numbering is not designated; this is a symmetric two-terminal resistor.",
+    "Current-noise index, voltage coefficient, high-frequency parasitics, and pulse-energy limits are not published.",
+    "No manufacturer simulation model is identified in the datasheet."
+  ],
+  "models": [],
+  "mpn": "0805W8F1004T5E",
+  "packages": [
+    {
+      "applicable_mpns": [
+        "0805W8F1004T5E"
+      ],
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+          "method": "table",
+          "page": 4,
+          "section": "Package",
+          "source_text": "0805 body is 2.00 by 1.25 by 0.55 mm nominal."
+        }
+      ],
+      "exposed_pad": false,
+      "manufacturer_name": "0805",
+      "package_body": {
+        "height_mm": 0.55,
+        "length_mm": 2.0,
+        "width_mm": 1.25
+      },
+      "pin_count": 2,
+      "recommended_land_pattern": {
+        "dimensions": {
+          "A_mm": 1.0,
+          "B_mm": 1.0,
+          "C_mm": 1.3,
+          "D_mm": 3.0
+        },
+        "evidence": [
+          {
+            "confidence": "high",
+            "document_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+            "method": "table",
+            "page": 5,
+            "section": "Recommended pad dimensions",
+            "source_text": "0805 land pattern A/B/C/D is 1.0/1.0/1.3/3.0 mm."
+          }
+        ],
+        "page": 5
+      },
+      "thermal_pad": false
+    }
+  ],
+  "pins": [],
+  "quality": {
+    "base_specs": 95,
+    "category_specs": 95,
+    "evidence": 100,
+    "identity": 90,
+    "overall": 94,
+    "pinout": 100
+  },
+  "schema_version": 1,
+  "specs": [
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+          "method": "table",
+          "page": 2,
+          "section": "Part-number system",
+          "source_text": "Ordering code 0805W8F1004T5E encodes 1e+06 ohm."
+        }
+      ],
+      "fact_kind": "fact",
+      "name": "nominal_resistance",
+      "typ": 1000000.0,
+      "unit": "ohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+          "method": "table",
+          "page": 2,
+          "section": "Part-number system",
+          "source_text": "Tolerance code F denotes \u00b11%."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1,
+      "min": -1,
+      "name": "resistance_tolerance",
+      "unit": "%"
+    },
+    {
+      "applicability": null,
+      "classification": "recommended_operating_condition",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "ambient_temperature",
+          "unit": "degC",
+          "value": 70
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+          "method": "table",
+          "page": 4,
+          "section": "Resistance range",
+          "source_text": "0805 W8 normal-size rating is 1/8 W at 70\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.125,
+      "name": "rated_power",
+      "unit": "W"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for maximum_working_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 150,
+      "name": "maximum_working_voltage",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for maximum_overload_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 300,
+      "name": "maximum_overload_voltage",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for dielectric_withstand_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 500,
+      "name": "dielectric_withstand_voltage",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "recommended_operating_condition",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+          "method": "table",
+          "page": 5,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for operating_temperature."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 155,
+      "min": -55,
+      "name": "operating_temperature",
+      "unit": "degC"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "nominal_resistance",
+          "unit": "ohm",
+          "value": 1000000.0
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+          "method": "table",
+          "page": 6,
+          "section": "Performance specification",
+          "source_text": "Manufacturer performance specification row for temperature_coefficient_magnitude."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 100,
+      "name": "temperature_coefficient_magnitude",
+      "unit": "ppm/degC"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "duration",
+          "unit": "h",
+          "value": 1000
+        },
+        {
+          "operator": "=",
+          "parameter": "ambient_temperature",
+          "unit": "degC",
+          "value": 70
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef",
+          "method": "table",
+          "page": 7,
+          "section": "Performance specification",
+          "source_text": "\u00b11% parts permit \u00b1(1.0% + 0.05 ohm) after 1000 h load life."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1,
+      "min": -1,
+      "name": "load_life_resistance_change",
+      "unit": "%"
+    }
+  ],
+  "status": "active",
+  "warnings": []
+}

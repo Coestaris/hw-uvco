@@ -1,0 +1,319 @@
+{
+  "categories": [
+    "diode"
+  ],
+  "description": "Surface-mount diode",
+  "document": {
+    "identity": {
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "ab0465caa1e7182c25cea543e08d09267f4952ed72ea61cddfe7518cf72802ee",
+          "method": "table",
+          "page": 1,
+          "section": "Document identity / ordering information",
+          "source_text": "The first page identifies the MM1Z5V6 device or exact family row and package."
+        }
+      ],
+      "family_members": [
+        "MM1Z5V6"
+      ],
+      "package_variant": "SOD-123",
+      "requested_mpn": "MM1Z5V6",
+      "status": "exact"
+    },
+    "manufacturer": "Zhuhai Hongjiacheng Technology Co., Ltd.",
+    "pages": 4,
+    "path": "MM1Z5V6.pdf",
+    "sha256": "ab0465caa1e7182c25cea543e08d09267f4952ed72ea61cddfe7518cf72802ee"
+  },
+  "extracted_at": "2026-09-23T12:37:32.695247+00:00",
+  "extractor_version": "manual-evidence-2",
+  "family": null,
+  "manufacturer": "Zhuhai Hongjiacheng Technology Co., Ltd.",
+  "missing": [
+    "Junction capacitance, zener temperature coefficient, repetitive pulse rating, and a manufacturer simulation model are not published."
+  ],
+  "models": [],
+  "mpn": "MM1Z5V6",
+  "packages": [
+    {
+      "applicable_mpns": [
+        "MM1Z5V6"
+      ],
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "ab0465caa1e7182c25cea543e08d09267f4952ed72ea61cddfe7518cf72802ee",
+          "method": "table",
+          "page": 1,
+          "section": "Package",
+          "source_text": "Manufacturer package designation SOD-123."
+        }
+      ],
+      "exposed_pad": false,
+      "manufacturer_name": "SOD-123",
+      "pin_count": 2,
+      "thermal_pad": false
+    }
+  ],
+  "pins": [
+    {
+      "active_level": null,
+      "aliases": [],
+      "description": "Cathode; banded end",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "ab0465caa1e7182c25cea543e08d09267f4952ed72ea61cddfe7518cf72802ee",
+          "method": "table",
+          "page": 1,
+          "section": "Pinning information",
+          "source_text": "Pin 1: K (Cathode; banded end)."
+        }
+      ],
+      "functions": [
+        "Cathode; banded end"
+      ],
+      "internal_pull": null,
+      "name": "K",
+      "numbers": [
+        "1"
+      ],
+      "output_structure": null,
+      "power_domain": null,
+      "type": "passive"
+    },
+    {
+      "active_level": null,
+      "aliases": [],
+      "description": "Anode",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "ab0465caa1e7182c25cea543e08d09267f4952ed72ea61cddfe7518cf72802ee",
+          "method": "table",
+          "page": 1,
+          "section": "Pinning information",
+          "source_text": "Pin 2: A (Anode)."
+        }
+      ],
+      "functions": [
+        "Anode"
+      ],
+      "internal_pull": null,
+      "name": "A",
+      "numbers": [
+        "2"
+      ],
+      "output_structure": null,
+      "power_domain": null,
+      "type": "passive"
+    }
+  ],
+  "quality": {
+    "base_specs": 95,
+    "category_specs": 95,
+    "evidence": 100,
+    "identity": 100,
+    "overall": 96,
+    "pinout": 100
+  },
+  "schema_version": 1,
+  "specs": [
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "ab0465caa1e7182c25cea543e08d09267f4952ed72ea61cddfe7518cf72802ee",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for power_dissipation."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.5,
+      "name": "power_dissipation",
+      "unit": "W"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "forward_current",
+          "unit": "mA",
+          "value": 10
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "ab0465caa1e7182c25cea543e08d09267f4952ed72ea61cddfe7518cf72802ee",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for forward_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.9,
+      "name": "forward_voltage",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "ab0465caa1e7182c25cea543e08d09267f4952ed72ea61cddfe7518cf72802ee",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for storage_temperature."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 150,
+      "min": -55,
+      "name": "storage_temperature",
+      "unit": "degC"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "ab0465caa1e7182c25cea543e08d09267f4952ed72ea61cddfe7518cf72802ee",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for junction_temperature."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 150,
+      "min": -55,
+      "name": "junction_temperature",
+      "unit": "degC"
+    },
+    {
+      "applicability": null,
+      "classification": "thermal_characteristic",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "ab0465caa1e7182c25cea543e08d09267f4952ed72ea61cddfe7518cf72802ee",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for junction_to_ambient_thermal_resistance."
+        }
+      ],
+      "fact_kind": "fact",
+      "name": "junction_to_ambient_thermal_resistance",
+      "typ": 340,
+      "unit": "degC/W"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "test_current",
+          "unit": "mA",
+          "value": 5
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "ab0465caa1e7182c25cea543e08d09267f4952ed72ea61cddfe7518cf72802ee",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for zener_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 6.0,
+      "min": 5.2,
+      "name": "zener_voltage",
+      "typ": 5.6,
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "test_current",
+          "unit": "mA",
+          "value": 5
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "ab0465caa1e7182c25cea543e08d09267f4952ed72ea61cddfe7518cf72802ee",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for zener_impedance."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 80,
+      "name": "zener_impedance",
+      "unit": "ohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "reverse_voltage",
+          "unit": "V",
+          "value": 2.5
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "ab0465caa1e7182c25cea543e08d09267f4952ed72ea61cddfe7518cf72802ee",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for reverse_leakage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1,
+      "name": "reverse_leakage",
+      "unit": "uA"
+    }
+  ],
+  "status": "active",
+  "warnings": []
+}

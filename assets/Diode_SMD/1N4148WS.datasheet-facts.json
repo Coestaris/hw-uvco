@@ -1,0 +1,538 @@
+{
+  "categories": [
+    "diode"
+  ],
+  "description": "Surface-mount diode",
+  "document": {
+    "identity": {
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Document identity / ordering information",
+          "source_text": "The first page identifies the 1N4148WS device or exact family row and package."
+        }
+      ],
+      "family_members": [
+        "1N4148WS"
+      ],
+      "package_variant": "SOD-323",
+      "requested_mpn": "1N4148WS",
+      "status": "exact"
+    },
+    "manufacturer": "Jiangsu Changjiang Electronics Technology Co., Ltd.",
+    "pages": 2,
+    "path": "1N4148WS.pdf",
+    "sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e"
+  },
+  "extracted_at": "2026-09-23T12:37:32.695247+00:00",
+  "extractor_version": "manual-evidence-2",
+  "family": null,
+  "manufacturer": "Jiangsu Changjiang Electronics Technology Co., Ltd.",
+  "missing": [
+    "Terminal numbering and polarity-to-pad mapping are not designated in the PDF.",
+    "Package dimensions and a manufacturer simulation model are not published."
+  ],
+  "models": [],
+  "mpn": "1N4148WS",
+  "packages": [
+    {
+      "applicable_mpns": [
+        "1N4148WS"
+      ],
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Package",
+          "source_text": "Manufacturer package designation SOD-323."
+        }
+      ],
+      "exposed_pad": false,
+      "manufacturer_name": "SOD-323",
+      "pin_count": 2,
+      "thermal_pad": false
+    }
+  ],
+  "pins": [],
+  "quality": {
+    "base_specs": 95,
+    "category_specs": 95,
+    "evidence": 100,
+    "identity": 100,
+    "overall": 96,
+    "pinout": 100
+  },
+  "schema_version": 1,
+  "specs": [
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for nonrepetitive_peak_reverse_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 100,
+      "name": "nonrepetitive_peak_reverse_voltage",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for repetitive_peak_reverse_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 100,
+      "name": "repetitive_peak_reverse_voltage",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for rms_reverse_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 71,
+      "name": "rms_reverse_voltage",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for continuous_forward_current."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.3,
+      "name": "continuous_forward_current",
+      "unit": "A"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for average_rectified_current."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.15,
+      "name": "average_rectified_current",
+      "unit": "A"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "pulse_duration",
+          "unit": "us",
+          "value": 1
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for forward_surge_current."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 2,
+      "name": "forward_surge_current",
+      "unit": "A"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "pulse_duration",
+          "unit": "s",
+          "value": 1
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for forward_surge_current."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1,
+      "name": "forward_surge_current",
+      "unit": "A"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for power_dissipation."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.2,
+      "name": "power_dissipation",
+      "unit": "W"
+    },
+    {
+      "applicability": null,
+      "classification": "thermal_characteristic",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for junction_to_ambient_thermal_resistance."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 625,
+      "name": "junction_to_ambient_thermal_resistance",
+      "unit": "degC/W"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for junction_temperature."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 150,
+      "name": "junction_temperature",
+      "unit": "degC"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for storage_temperature."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 150,
+      "min": -55,
+      "name": "storage_temperature",
+      "unit": "degC"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "forward_current",
+          "unit": "mA",
+          "value": 1
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for forward_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.715,
+      "name": "forward_voltage",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "forward_current",
+          "unit": "mA",
+          "value": 10
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for forward_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.855,
+      "name": "forward_voltage",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "forward_current",
+          "unit": "mA",
+          "value": 50
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for forward_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.0,
+      "name": "forward_voltage",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "forward_current",
+          "unit": "mA",
+          "value": 150
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for forward_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.25,
+      "name": "forward_voltage",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "reverse_voltage",
+          "unit": "V",
+          "value": 75
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for reverse_current."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1,
+      "name": "reverse_current",
+      "unit": "uA"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "reverse_voltage",
+          "unit": "V",
+          "value": 20
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for reverse_current."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 25,
+      "name": "reverse_current",
+      "unit": "nA"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "reverse_voltage",
+          "unit": "V",
+          "value": 0
+        },
+        {
+          "operator": "=",
+          "parameter": "frequency",
+          "unit": "MHz",
+          "value": 1
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for terminal_capacitance."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 2,
+      "name": "terminal_capacitance",
+      "unit": "pF"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "forward_current",
+          "unit": "mA",
+          "value": 10
+        },
+        {
+          "operator": "=",
+          "parameter": "reverse_current",
+          "unit": "mA",
+          "value": 10
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for reverse_recovery_time."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 4,
+      "name": "reverse_recovery_time",
+      "unit": "ns"
+    }
+  ],
+  "status": "active",
+  "warnings": []
+}

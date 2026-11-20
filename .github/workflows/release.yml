@@ -1,0 +1,129 @@
+name: Hardware release
+on:
+  workflow_dispatch:
+    inputs:
+      revision:
+        description: Hardware revision number (1 for rev1)
+        required: true
+        type: number
+permissions:
+  contents: write
+  packages: read
+concurrency:
+  group: hardware-release-rev${{ inputs.revision }}
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out project and assets
+        uses: actions/checkout@v7
+        with:
+          lfs: true
+          persist-credentials: false
+      - name: Read pinned infrastructure revision
+        id: pin
+        shell: bash
+        run: |
+          pin="$(git rev-parse HEAD:infra)"
+          printf 'sha=%s\n' "$pin" >> "$GITHUB_OUTPUT"
+      - name: Check out private infrastructure
+        uses: actions/checkout@v7
+        with:
+          repository: Coestaris/hw-infra
+          ref: ${{ steps.pin.outputs.sha }}
+          path: infra
+          ssh-key: ${{ secrets.INFRA_SSH_KEY }}
+          lfs: true
+          persist-credentials: false
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          version: "0.12.17"
+      - name: Set up project tooling
+        id: setup
+        run: infra/setup.sh --apply
+      - name: Resolve hardware revision
+        id: project
+        env:
+          REVISION: ${{ inputs.revision }}
+        run: |
+          name="$(jq -er '.name' .hw-project.json)"
+          uv run --project infra/tools --locked kicad10_tree project resolve \
+            --name "$name" --revision "$REVISION" --format json > "$RUNNER_TEMP/project.json"
+          key="$(jq -er 'select(.status == "ok") | .data.key' "$RUNNER_TEMP/project.json")"
+          printf 'key=%s\nname=%s\n' "$key" "$name" >> "$GITHUB_OUTPUT"
+      - name: Reject existing release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: rev${{ inputs.revision }}
+        run: |
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1 || \
+            gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$RELEASE_TAG" >/dev/null 2>&1; then
+            echo "::error::$RELEASE_TAG already exists."
+            exit 1
+          fi
+      - name: Select pinned release image
+        id: image
+        env:
+          INFRA_SHA: ${{ steps.pin.outputs.sha }}
+        run: |
+          origin="$(git -C infra remote get-url origin)"
+          repository="${origin#git@github.com:}"
+          repository="${repository#https://github.com/}"
+          repository="${repository%.git}"
+          printf 'name=ghcr.io/%s-tools:sha-%s\n' "${repository,,}" "$INFRA_SHA" >> "$GITHUB_OUTPUT"
+      - name: Log in to the private image registry
+        uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Pull infra-owned release image
+        env:
+          RELEASE_IMAGE: ${{ steps.image.outputs.name }}
+        run: docker pull "$RELEASE_IMAGE"
+      - name: Gate release
+        uses: ./infra/actions/gate
+        with:
+          project: ${{ steps.project.outputs.key }}
+          image: ${{ steps.image.outputs.name }}
+      - name: Export manufacturing artifacts
+        uses: ./infra/actions/export
+        with:
+          project: ${{ steps.project.outputs.key }}
+          image: ${{ steps.image.outputs.name }}
+      - name: Retain reports and artifacts
+        if: always() && steps.setup.outcome == 'success'
+        uses: actions/upload-artifact@v7
+        with:
+          name: rev${{ inputs.revision }}-build-${{ github.run_number }}
+          path: ${{ runner.temp }}/release/
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Build release notes
+        env:
+          PROJECT_NAME: ${{ steps.project.outputs.name }}
+          REVISION: ${{ inputs.revision }}
+          INFRA_SHA: ${{ steps.pin.outputs.sha }}
+        run: |
+          notes="$RUNNER_TEMP/release/notes.md"
+          {
+            printf '# %s rev%s\n\n' "$PROJECT_NAME" "$REVISION"
+            printf 'Full release gate and artifact export passed.\n\n'
+            printf 'Source commit: %s\n\nInfrastructure commit: %s\n\n' "$GITHUB_SHA" "$INFRA_SHA"
+            printf '## Artifacts\n\n'
+            while IFS= read -r artifact; do
+              checksum="$(sha256sum "$artifact" | cut -d ' ' -f 1)"
+              printf -- '- %s — SHA-256 %s\n' "${artifact##*/}" "$checksum"
+            done < <(find "$RUNNER_TEMP/release/artifacts" -maxdepth 1 -type f | sort)
+          } > "$notes"
+      - name: Publish hardware revision
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: rev${{ inputs.revision }}
+          PROJECT_NAME: ${{ steps.project.outputs.name }}
+        run: |
+          gh release create "$RELEASE_TAG" "$RUNNER_TEMP"/release/artifacts/* \
+            --target "$GITHUB_SHA" --title "$PROJECT_NAME $RELEASE_TAG" \
+            --notes-file "$RUNNER_TEMP/release/notes.md" --latest

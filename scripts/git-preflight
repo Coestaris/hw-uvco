@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root=$(git rev-parse --show-toplevel)
+cd "$repo_root"
+
+if git diff --cached --quiet; then
+    echo 'git-preflight: no staged changes' >&2
+    exit 1
+fi
+
+identity_file=$(mktemp)
+trap 'rm -f "$identity_file"' EXIT
+git show :remote.env > "$identity_file"
+# shellcheck disable=SC1090 # The staged, tracked remote.env is the identity source.
+source "$identity_file"
+
+if [[ $(git config --get user.name) != "$REMOTE_AUTHOR_NAME" ||
+      $(git config --get user.email) != "$REMOTE_AUTHOR_EMAIL" ]]; then
+    echo 'git-preflight: Git identity does not match staged remote.env' >&2
+    exit 1
+fi
+
+signing_key=$(git config --get user.signingkey)
+if [[ ! $signing_key =~ ^[[:xdigit:]]{40}$ ||
+      $(git config --get commit.gpgsign) != true ||
+      $(git config --get gpg.format) != openpgp ]]; then
+    echo 'git-preflight: require a full OpenPGP fingerprint and signed commits' >&2
+    exit 1
+fi
+
+while IFS= read -r -d '' path; do
+    case "$path" in
+        .env|*/.env|*.env)
+            if [[ $path != remote.env ]]; then
+                echo "git-preflight: blocked staged path: $path" >&2
+                exit 1
+            fi
+            ;;
+        */__pycache__/*|*.pyc|*.pem|*.key|id_rsa|id_ed25519)
+            echo "git-preflight: blocked staged path: $path" >&2
+            exit 1
+            ;;
+        *.py|*.md|*.toml|*.json|*.sh|*.lock|*.yaml|*.yml|*.kicad_*)
+            if git show ":$path" | python3 -c \
+                'import sys; sys.exit(1 if b"\r\n" in sys.stdin.buffer.read() else 0)'; then
+                :
+            else
+                echo "git-preflight: CRLF line endings in staged file: $path" >&2
+                exit 1
+            fi
+            ;;
+        *.pdf|*.stpz|*.sqlite3)
+            ;;
+    esac
+done < <(git diff --cached --name-only -z --diff-filter=ACMR)

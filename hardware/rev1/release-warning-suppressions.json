@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "suppressions": [
+    {
+      "id": "existing-front-silkscreen-strokes",
+      "tool": "drc",
+      "type": "assertion_failure",
+      "severity": "warning",
+      "description": "Assertion failure (rule 'JLCPCB: Silkscreen graphic stroke')",
+      "item_description_suffix": " on F.Silkscreen",
+      "rationale": "Approved for the existing released board; preserve its front silkscreen while testing the release harness."
+    },
+    {
+      "id": "released-board-silkscreen-over-copper",
+      "tool": "drc",
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "description_prefix": "Silkscreen clipped by solder mask (rule 'JLCPCB: Pad to silkscreen'",
+      "rationale": "Explicitly approved for the already released and manufactured VCO1 rev1 while testing the release harness."
+    },
+    {
+      "id": "released-board-silkscreen-overlap",
+      "tool": "drc",
+      "type": "silk_overlap",
+      "severity": "warning",
+      "description": "Silkscreen clearance",
+      "rationale": "Explicitly approved for the already released and manufactured VCO1 rev1 while testing the release harness."
+    },
+    {
+      "id": "released-board-silkscreen-edge-clearance",
+      "tool": "drc",
+      "type": "silk_edge_clearance",
+      "severity": "warning",
+      "description": "Silkscreen clipped by board edge",
+      "rationale": "Explicitly approved for the already released and manufactured VCO1 rev1 while testing the release harness."
+    }
+  ]
+}

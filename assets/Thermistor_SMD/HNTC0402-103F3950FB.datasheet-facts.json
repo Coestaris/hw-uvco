@@ -1,0 +1,5199 @@
+{
+  "categories": [
+    "thermistor"
+  ],
+  "description": "10 kohm 3950 K 0402 NTC thermistor",
+  "document": {
+    "identity": {
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 1,
+          "section": "Document identity / ordering information",
+          "source_text": "The document title and ordering table explicitly identify HNTC0402-103F3950FB."
+        }
+      ],
+      "family_members": [
+        "HNTC0402-103F3950FB"
+      ],
+      "package_variant": "0402",
+      "requested_mpn": "HNTC0402-103F3950FB",
+      "status": "exact"
+    },
+    "manufacturer": "Zhuhai Hongjiacheng Technology Co., Ltd.",
+    "pages": 8,
+    "path": "HNTC0402-103F3950FB.pdf",
+    "sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54"
+  },
+  "extracted_at": "2026-09-23T12:37:32.695247+00:00",
+  "extractor_version": "manual-evidence-2",
+  "family": null,
+  "manufacturer": "Zhuhai Hongjiacheng Technology Co., Ltd.",
+  "missing": [
+    "Terminal numbering is not designated; this is a symmetric two-terminal NTC thermistor.",
+    "Maximum voltage and Steinhart-Hart coefficients are not published.",
+    "No manufacturer simulation model is identified in the datasheet."
+  ],
+  "models": [],
+  "mpn": "HNTC0402-103F3950FB",
+  "packages": [
+    {
+      "applicable_mpns": [
+        "HNTC0402-103F3950FB"
+      ],
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 4,
+          "section": "Package",
+          "source_text": "0402 dimensions are 1.00 by 0.50 by 0.50 mm nominal."
+        }
+      ],
+      "exposed_pad": false,
+      "manufacturer_name": "0402",
+      "package_body": {
+        "height_mm": 0.5,
+        "length_mm": 1.0,
+        "width_mm": 0.5
+      },
+      "pin_count": 2,
+      "thermal_pad": false
+    }
+  ],
+  "pins": [],
+  "quality": {
+    "base_specs": 95,
+    "category_specs": 95,
+    "evidence": 100,
+    "identity": 100,
+    "overall": 96,
+    "pinout": 100
+  },
+  "schema_version": 1,
+  "specs": [
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "ambient_temperature",
+          "unit": "degC",
+          "value": 25
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for resistance_at_25c."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 10.1,
+      "min": 9.9,
+      "name": "resistance_at_25c",
+      "typ": 10,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "ambient_temperature",
+          "unit": "degC",
+          "value": 25
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for resistance_tolerance."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1,
+      "min": -1,
+      "name": "resistance_tolerance",
+      "unit": "%"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "text",
+          "parameter": "temperature_pair",
+          "unit": null,
+          "value": "25\u00b0C/50\u00b0C"
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for b_constant_25_50."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 3989.5,
+      "min": 3910.5,
+      "name": "b_constant_25_50",
+      "typ": 3950,
+      "unit": "K"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "text",
+          "parameter": "temperature_pair",
+          "unit": null,
+          "value": "25\u00b0C/50\u00b0C"
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for b_constant_tolerance."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1,
+      "min": -1,
+      "name": "b_constant_tolerance",
+      "unit": "%"
+    },
+    {
+      "applicability": null,
+      "classification": "recommended_operating_condition",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "ambient_temperature",
+          "unit": "degC",
+          "value": 25
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for permissible_operating_current."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.31,
+      "name": "permissible_operating_current",
+      "unit": "mA"
+    },
+    {
+      "applicability": null,
+      "classification": "thermal_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "ambient_temperature",
+          "unit": "degC",
+          "value": 25
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for dissipation_factor."
+        }
+      ],
+      "fact_kind": "fact",
+      "name": "dissipation_factor",
+      "typ": 1.0,
+      "unit": "mW/degC"
+    },
+    {
+      "applicability": null,
+      "classification": "thermal_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "ambient_temperature",
+          "unit": "degC",
+          "value": 25
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for thermal_time_constant."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 3,
+      "name": "thermal_time_constant",
+      "unit": "s"
+    },
+    {
+      "applicability": null,
+      "classification": "recommended_operating_condition",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "ambient_temperature",
+          "unit": "degC",
+          "value": 25
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for rated_power."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 100,
+      "name": "rated_power",
+      "unit": "mW"
+    },
+    {
+      "applicability": null,
+      "classification": "recommended_operating_condition",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for operating_temperature."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 125,
+      "min": -40,
+      "name": "operating_temperature",
+      "unit": "degC"
+    },
+    {
+      "applicability": null,
+      "classification": "recommended_operating_condition",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 4,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for storage_temperature."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 40,
+      "min": -10,
+      "name": "storage_temperature",
+      "unit": "degC"
+    },
+    {
+      "applicability": null,
+      "classification": "recommended_operating_condition",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 4,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for storage_relative_humidity."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 75,
+      "name": "storage_relative_humidity",
+      "unit": "%RH"
+    },
+    {
+      "applicability": null,
+      "classification": "application_recommendation",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 4,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for storage_period."
+        }
+      ],
+      "fact_kind": "recommendation",
+      "max": 6,
+      "name": "storage_period",
+      "unit": "month"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -40
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -40\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 361.3,
+      "min": 329.927,
+      "name": "resistance_at_temperature",
+      "typ": 345.275,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -39
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -39\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 337.545,
+      "min": 308.651,
+      "name": "resistance_at_temperature",
+      "typ": 322.791,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -38
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -38\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 315.514,
+      "min": 288.892,
+      "name": "resistance_at_temperature",
+      "typ": 301.925,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -37
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -37\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 295.071,
+      "min": 270.532,
+      "name": "resistance_at_temperature",
+      "typ": 282.549,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -36
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -36\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 276.091,
+      "min": 253.464,
+      "name": "resistance_at_temperature",
+      "typ": 264.549,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -35
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -35\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 258.459,
+      "min": 237.587,
+      "name": "resistance_at_temperature",
+      "typ": 247.816,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -34
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -34\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 242.072,
+      "min": 222.812,
+      "name": "resistance_at_temperature",
+      "typ": 232.254,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -33
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -33\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 226.833,
+      "min": 209.055,
+      "name": "resistance_at_temperature",
+      "typ": 217.774,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -32
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -32\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 212.655,
+      "min": 196.239,
+      "name": "resistance_at_temperature",
+      "typ": 204.292,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -31
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -31\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 199.457,
+      "min": 184.293,
+      "name": "resistance_at_temperature",
+      "typ": 191.735,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -30
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -30\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 187.165,
+      "min": 173.153,
+      "name": "resistance_at_temperature",
+      "typ": 180.032,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -29
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -29\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 175.711,
+      "min": 162.76,
+      "name": "resistance_at_temperature",
+      "typ": 169.12,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -28
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -28\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 165.033,
+      "min": 153.059,
+      "name": "resistance_at_temperature",
+      "typ": 158.941,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -27
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -27\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 155.073,
+      "min": 144.0,
+      "name": "resistance_at_temperature",
+      "typ": 149.441,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -26
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -26\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 145.779,
+      "min": 135.535,
+      "name": "resistance_at_temperature",
+      "typ": 140.571,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -25
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -25\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 137.102,
+      "min": 127.622,
+      "name": "resistance_at_temperature",
+      "typ": 132.284,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -24
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -24\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 128.979,
+      "min": 120.207,
+      "name": "resistance_at_temperature",
+      "typ": 124.522,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -23
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -23\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 121.391,
+      "min": 113.27,
+      "name": "resistance_at_temperature",
+      "typ": 117.266,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -22
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -22\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 114.298,
+      "min": 106.779,
+      "name": "resistance_at_temperature",
+      "typ": 110.48,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -21
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -21\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 107.664,
+      "min": 100.701,
+      "name": "resistance_at_temperature",
+      "typ": 104.13,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -20
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -20\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 101.459,
+      "min": 95.008,
+      "name": "resistance_at_temperature",
+      "typ": 98.185,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -19
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -19\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 95.65,
+      "min": 89.674,
+      "name": "resistance_at_temperature",
+      "typ": 92.618,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -18
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -18\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 90.211,
+      "min": 84.672,
+      "name": "resistance_at_temperature",
+      "typ": 87.402,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -17
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -17\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 85.115,
+      "min": 79.982,
+      "name": "resistance_at_temperature",
+      "typ": 82.513,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -16
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -16\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 80.339,
+      "min": 75.58,
+      "name": "resistance_at_temperature",
+      "typ": 77.927,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -15
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -15\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 75.861,
+      "min": 71.449,
+      "name": "resistance_at_temperature",
+      "typ": 73.626,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -14
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -14\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 71.661,
+      "min": 67.569,
+      "name": "resistance_at_temperature",
+      "typ": 69.588,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -13
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -13\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 67.719,
+      "min": 63.924,
+      "name": "resistance_at_temperature",
+      "typ": 65.797,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -12
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -12\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 64.019,
+      "min": 60.498,
+      "name": "resistance_at_temperature",
+      "typ": 62.237,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -11
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -11\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 60.543,
+      "min": 57.277,
+      "name": "resistance_at_temperature",
+      "typ": 58.89,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -10
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -10\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 57.278,
+      "min": 54.247,
+      "name": "resistance_at_temperature",
+      "typ": 55.744,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -9
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -9\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 54.208,
+      "min": 51.396,
+      "name": "resistance_at_temperature",
+      "typ": 52.786,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -8
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -8\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 51.322,
+      "min": 48.712,
+      "name": "resistance_at_temperature",
+      "typ": 50.002,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -7
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -7\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 48.606,
+      "min": 46.184,
+      "name": "resistance_at_temperature",
+      "typ": 47.382,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -6
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -6\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 46.051,
+      "min": 43.803,
+      "name": "resistance_at_temperature",
+      "typ": 44.916,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -5
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -5\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 43.646,
+      "min": 41.559,
+      "name": "resistance_at_temperature",
+      "typ": 42.592,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -4
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -4\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 41.377,
+      "min": 39.441,
+      "name": "resistance_at_temperature",
+      "typ": 40.4,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -3
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -3\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 39.24,
+      "min": 37.443,
+      "name": "resistance_at_temperature",
+      "typ": 38.333,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -2
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -2\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 37.227,
+      "min": 35.559,
+      "name": "resistance_at_temperature",
+      "typ": 36.385,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": -1
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at -1\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 35.328,
+      "min": 33.781,
+      "name": "resistance_at_temperature",
+      "typ": 34.548,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 0
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 0\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 33.538,
+      "min": 32.102,
+      "name": "resistance_at_temperature",
+      "typ": 32.814,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 1
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 1\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 31.851,
+      "min": 30.518,
+      "name": "resistance_at_temperature",
+      "typ": 31.179,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 2
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 2\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 30.259,
+      "min": 29.022,
+      "name": "resistance_at_temperature",
+      "typ": 29.636,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 3
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 3\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 28.756,
+      "min": 27.608,
+      "name": "resistance_at_temperature",
+      "typ": 28.178,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 4
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 4\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 27.336,
+      "min": 26.271,
+      "name": "resistance_at_temperature",
+      "typ": 26.8,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 5
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 5\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 25.994,
+      "min": 25.007,
+      "name": "resistance_at_temperature",
+      "typ": 25.497,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 6
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 5,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 6\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 24.724,
+      "min": 23.808,
+      "name": "resistance_at_temperature",
+      "typ": 24.263,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 7
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 7\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 23.523,
+      "min": 22.674,
+      "name": "resistance_at_temperature",
+      "typ": 23.096,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 8
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 8\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 22.387,
+      "min": 21.601,
+      "name": "resistance_at_temperature",
+      "typ": 21.992,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 9
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 9\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 21.313,
+      "min": 20.584,
+      "name": "resistance_at_temperature",
+      "typ": 20.947,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 10
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 10\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 20.297,
+      "min": 19.622,
+      "name": "resistance_at_temperature",
+      "typ": 19.958,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 11
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 11\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 19.336,
+      "min": 18.711,
+      "name": "resistance_at_temperature",
+      "typ": 19.022,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 12
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 12\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 18.425,
+      "min": 17.847,
+      "name": "resistance_at_temperature",
+      "typ": 18.135,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 13
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 13\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 17.563,
+      "min": 17.028,
+      "name": "resistance_at_temperature",
+      "typ": 17.294,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 14
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 14\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 16.746,
+      "min": 16.251,
+      "name": "resistance_at_temperature",
+      "typ": 16.498,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 15
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 15\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 15.972,
+      "min": 15.514,
+      "name": "resistance_at_temperature",
+      "typ": 15.742,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 16
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 16\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 15.237,
+      "min": 14.814,
+      "name": "resistance_at_temperature",
+      "typ": 15.025,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 17
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 17\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 14.541,
+      "min": 14.15,
+      "name": "resistance_at_temperature",
+      "typ": 14.345,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 18
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 18\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 13.88,
+      "min": 13.519,
+      "name": "resistance_at_temperature",
+      "typ": 13.699,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 19
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 19\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 13.253,
+      "min": 12.921,
+      "name": "resistance_at_temperature",
+      "typ": 13.086,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 20
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 20\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 12.657,
+      "min": 12.351,
+      "name": "resistance_at_temperature",
+      "typ": 12.504,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 21
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 21\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 12.092,
+      "min": 11.811,
+      "name": "resistance_at_temperature",
+      "typ": 11.951,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 22
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 22\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 11.555,
+      "min": 11.296,
+      "name": "resistance_at_temperature",
+      "typ": 11.426,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 23
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 23\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 11.045,
+      "min": 10.808,
+      "name": "resistance_at_temperature",
+      "typ": 10.926,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 24
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 24\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 10.561,
+      "min": 10.342,
+      "name": "resistance_at_temperature",
+      "typ": 10.452,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 25
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 25\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 10.1,
+      "min": 9.9,
+      "name": "resistance_at_temperature",
+      "typ": 10.0,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 26
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 26\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 9.67,
+      "min": 9.471,
+      "name": "resistance_at_temperature",
+      "typ": 9.57,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 27
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 27\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 9.261,
+      "min": 9.062,
+      "name": "resistance_at_temperature",
+      "typ": 9.162,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 28
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 28\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 8.872,
+      "min": 8.673,
+      "name": "resistance_at_temperature",
+      "typ": 8.773,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 29
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 29\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 8.501,
+      "min": 8.304,
+      "name": "resistance_at_temperature",
+      "typ": 8.402,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 30
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 30\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 8.147,
+      "min": 7.952,
+      "name": "resistance_at_temperature",
+      "typ": 8.049,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 31
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 31\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 7.811,
+      "min": 7.616,
+      "name": "resistance_at_temperature",
+      "typ": 7.713,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 32
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 32\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 7.49,
+      "min": 7.297,
+      "name": "resistance_at_temperature",
+      "typ": 7.393,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 33
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 33\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 7.184,
+      "min": 6.993,
+      "name": "resistance_at_temperature",
+      "typ": 7.088,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 34
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 34\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 6.892,
+      "min": 6.703,
+      "name": "resistance_at_temperature",
+      "typ": 6.797,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 35
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 35\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 6.613,
+      "min": 6.427,
+      "name": "resistance_at_temperature",
+      "typ": 6.52,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 36
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 36\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 6.348,
+      "min": 6.164,
+      "name": "resistance_at_temperature",
+      "typ": 6.255,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 37
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 37\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 6.094,
+      "min": 5.913,
+      "name": "resistance_at_temperature",
+      "typ": 6.003,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 38
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 38\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 5.852,
+      "min": 5.673,
+      "name": "resistance_at_temperature",
+      "typ": 5.762,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 39
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 39\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 5.621,
+      "min": 5.445,
+      "name": "resistance_at_temperature",
+      "typ": 5.532,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 40
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 40\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 5.4,
+      "min": 5.226,
+      "name": "resistance_at_temperature",
+      "typ": 5.313,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 41
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 41\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 5.189,
+      "min": 5.018,
+      "name": "resistance_at_temperature",
+      "typ": 5.103,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 42
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 42\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 4.987,
+      "min": 4.819,
+      "name": "resistance_at_temperature",
+      "typ": 4.903,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 43
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 43\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 4.795,
+      "min": 4.629,
+      "name": "resistance_at_temperature",
+      "typ": 4.711,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 44
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 44\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 4.61,
+      "min": 4.448,
+      "name": "resistance_at_temperature",
+      "typ": 4.529,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 45
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 45\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 4.434,
+      "min": 4.274,
+      "name": "resistance_at_temperature",
+      "typ": 4.354,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 46
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 46\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 4.266,
+      "min": 4.109,
+      "name": "resistance_at_temperature",
+      "typ": 4.187,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 47
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 47\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 4.104,
+      "min": 3.951,
+      "name": "resistance_at_temperature",
+      "typ": 4.027,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 48
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 48\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 3.95,
+      "min": 3.799,
+      "name": "resistance_at_temperature",
+      "typ": 3.874,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 49
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 49\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 3.803,
+      "min": 3.655,
+      "name": "resistance_at_temperature",
+      "typ": 3.728,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 50
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 50\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 3.661,
+      "min": 3.516,
+      "name": "resistance_at_temperature",
+      "typ": 3.588,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 51
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 51\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 3.526,
+      "min": 3.384,
+      "name": "resistance_at_temperature",
+      "typ": 3.454,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 52
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 52\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 3.396,
+      "min": 3.257,
+      "name": "resistance_at_temperature",
+      "typ": 3.326,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 53
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 6,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 53\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 3.272,
+      "min": 3.135,
+      "name": "resistance_at_temperature",
+      "typ": 3.203,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 54
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 54\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 3.153,
+      "min": 3.019,
+      "name": "resistance_at_temperature",
+      "typ": 3.086,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 55
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 55\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 3.039,
+      "min": 2.908,
+      "name": "resistance_at_temperature",
+      "typ": 2.973,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 56
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 56\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 2.93,
+      "min": 2.801,
+      "name": "resistance_at_temperature",
+      "typ": 2.865,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 57
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 57\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 2.825,
+      "min": 2.699,
+      "name": "resistance_at_temperature",
+      "typ": 2.761,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 58
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 58\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 2.724,
+      "min": 2.601,
+      "name": "resistance_at_temperature",
+      "typ": 2.662,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 59
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 59\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 2.628,
+      "min": 2.507,
+      "name": "resistance_at_temperature",
+      "typ": 2.567,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 60
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 60\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 2.535,
+      "min": 2.417,
+      "name": "resistance_at_temperature",
+      "typ": 2.476,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 61
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 61\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 2.447,
+      "min": 2.331,
+      "name": "resistance_at_temperature",
+      "typ": 2.388,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 62
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 62\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 2.362,
+      "min": 2.248,
+      "name": "resistance_at_temperature",
+      "typ": 2.304,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 63
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 63\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 2.28,
+      "min": 2.169,
+      "name": "resistance_at_temperature",
+      "typ": 2.224,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 64
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 64\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 2.201,
+      "min": 2.092,
+      "name": "resistance_at_temperature",
+      "typ": 2.146,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 65
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 65\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 2.126,
+      "min": 2.019,
+      "name": "resistance_at_temperature",
+      "typ": 2.072,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 66
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 66\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 2.053,
+      "min": 1.949,
+      "name": "resistance_at_temperature",
+      "typ": 2.001,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 67
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 67\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.984,
+      "min": 1.882,
+      "name": "resistance_at_temperature",
+      "typ": 1.932,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 68
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 68\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.917,
+      "min": 1.817,
+      "name": "resistance_at_temperature",
+      "typ": 1.866,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 69
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 69\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.852,
+      "min": 1.754,
+      "name": "resistance_at_temperature",
+      "typ": 1.803,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 70
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 70\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.79,
+      "min": 1.695,
+      "name": "resistance_at_temperature",
+      "typ": 1.742,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 71
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 71\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.731,
+      "min": 1.637,
+      "name": "resistance_at_temperature",
+      "typ": 1.684,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 72
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 72\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.674,
+      "min": 1.582,
+      "name": "resistance_at_temperature",
+      "typ": 1.628,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 73
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 73\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.619,
+      "min": 1.529,
+      "name": "resistance_at_temperature",
+      "typ": 1.574,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 74
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 74\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.566,
+      "min": 1.479,
+      "name": "resistance_at_temperature",
+      "typ": 1.522,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 75
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 75\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.516,
+      "min": 1.43,
+      "name": "resistance_at_temperature",
+      "typ": 1.472,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 76
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 76\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.467,
+      "min": 1.383,
+      "name": "resistance_at_temperature",
+      "typ": 1.424,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 77
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 77\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.419,
+      "min": 1.337,
+      "name": "resistance_at_temperature",
+      "typ": 1.378,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 78
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 78\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.374,
+      "min": 1.294,
+      "name": "resistance_at_temperature",
+      "typ": 1.333,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 79
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 79\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.33,
+      "min": 1.251,
+      "name": "resistance_at_temperature",
+      "typ": 1.29,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 80
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 80\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.288,
+      "min": 1.211,
+      "name": "resistance_at_temperature",
+      "typ": 1.249,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 81
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 81\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.247,
+      "min": 1.172,
+      "name": "resistance_at_temperature",
+      "typ": 1.209,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 82
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 82\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.208,
+      "min": 1.135,
+      "name": "resistance_at_temperature",
+      "typ": 1.171,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 83
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 83\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.171,
+      "min": 1.099,
+      "name": "resistance_at_temperature",
+      "typ": 1.134,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 84
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 84\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.135,
+      "min": 1.064,
+      "name": "resistance_at_temperature",
+      "typ": 1.099,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 85
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 85\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.1,
+      "min": 1.031,
+      "name": "resistance_at_temperature",
+      "typ": 1.065,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 86
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 86\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.066,
+      "min": 0.998,
+      "name": "resistance_at_temperature",
+      "typ": 1.032,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 87
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 87\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.033,
+      "min": 0.967,
+      "name": "resistance_at_temperature",
+      "typ": 1.0,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 88
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 88\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.002,
+      "min": 0.937,
+      "name": "resistance_at_temperature",
+      "typ": 0.969,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 89
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 89\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.972,
+      "min": 0.908,
+      "name": "resistance_at_temperature",
+      "typ": 0.94,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 90
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 90\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.943,
+      "min": 0.881,
+      "name": "resistance_at_temperature",
+      "typ": 0.911,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 91
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 91\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.914,
+      "min": 0.854,
+      "name": "resistance_at_temperature",
+      "typ": 0.884,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 92
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 92\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.887,
+      "min": 0.828,
+      "name": "resistance_at_temperature",
+      "typ": 0.857,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 93
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 93\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.861,
+      "min": 0.803,
+      "name": "resistance_at_temperature",
+      "typ": 0.831,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 94
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 94\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.835,
+      "min": 0.779,
+      "name": "resistance_at_temperature",
+      "typ": 0.807,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 95
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 95\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.811,
+      "min": 0.755,
+      "name": "resistance_at_temperature",
+      "typ": 0.783,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 96
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 96\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.787,
+      "min": 0.733,
+      "name": "resistance_at_temperature",
+      "typ": 0.76,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 97
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 97\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.765,
+      "min": 0.711,
+      "name": "resistance_at_temperature",
+      "typ": 0.738,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 98
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 98\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.743,
+      "min": 0.691,
+      "name": "resistance_at_temperature",
+      "typ": 0.716,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 99
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 99\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.721,
+      "min": 0.67,
+      "name": "resistance_at_temperature",
+      "typ": 0.695,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 100
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 7,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 100\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.701,
+      "min": 0.651,
+      "name": "resistance_at_temperature",
+      "typ": 0.675,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 101
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 101\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.681,
+      "min": 0.632,
+      "name": "resistance_at_temperature",
+      "typ": 0.656,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 102
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 102\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.662,
+      "min": 0.614,
+      "name": "resistance_at_temperature",
+      "typ": 0.637,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 103
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 103\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.643,
+      "min": 0.596,
+      "name": "resistance_at_temperature",
+      "typ": 0.619,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 104
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 104\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.625,
+      "min": 0.579,
+      "name": "resistance_at_temperature",
+      "typ": 0.602,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 105
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 105\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.608,
+      "min": 0.563,
+      "name": "resistance_at_temperature",
+      "typ": 0.585,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 106
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 106\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.591,
+      "min": 0.547,
+      "name": "resistance_at_temperature",
+      "typ": 0.569,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 107
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 107\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.575,
+      "min": 0.532,
+      "name": "resistance_at_temperature",
+      "typ": 0.553,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 108
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 108\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.559,
+      "min": 0.517,
+      "name": "resistance_at_temperature",
+      "typ": 0.538,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 109
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 109\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.544,
+      "min": 0.502,
+      "name": "resistance_at_temperature",
+      "typ": 0.523,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 110
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 110\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.529,
+      "min": 0.489,
+      "name": "resistance_at_temperature",
+      "typ": 0.508,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 111
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 111\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.515,
+      "min": 0.475,
+      "name": "resistance_at_temperature",
+      "typ": 0.495,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 112
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 112\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.501,
+      "min": 0.462,
+      "name": "resistance_at_temperature",
+      "typ": 0.481,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 113
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 113\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.487,
+      "min": 0.449,
+      "name": "resistance_at_temperature",
+      "typ": 0.468,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 114
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 114\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.474,
+      "min": 0.437,
+      "name": "resistance_at_temperature",
+      "typ": 0.456,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 115
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 115\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.462,
+      "min": 0.425,
+      "name": "resistance_at_temperature",
+      "typ": 0.443,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 116
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 116\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.45,
+      "min": 0.414,
+      "name": "resistance_at_temperature",
+      "typ": 0.432,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 117
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 117\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.438,
+      "min": 0.403,
+      "name": "resistance_at_temperature",
+      "typ": 0.42,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 118
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 118\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.427,
+      "min": 0.392,
+      "name": "resistance_at_temperature",
+      "typ": 0.409,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 119
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 119\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.416,
+      "min": 0.382,
+      "name": "resistance_at_temperature",
+      "typ": 0.399,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 120
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 120\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.405,
+      "min": 0.372,
+      "name": "resistance_at_temperature",
+      "typ": 0.388,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 121
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 121\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.395,
+      "min": 0.362,
+      "name": "resistance_at_temperature",
+      "typ": 0.378,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 122
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 122\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.385,
+      "min": 0.353,
+      "name": "resistance_at_temperature",
+      "typ": 0.368,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 123
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 123\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.375,
+      "min": 0.344,
+      "name": "resistance_at_temperature",
+      "typ": 0.359,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 124
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 124\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.365,
+      "min": 0.335,
+      "name": "resistance_at_temperature",
+      "typ": 0.35,
+      "unit": "kohm"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "temperature",
+          "unit": "degC",
+          "value": 125
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "4659d4c0db94344715084a55ce65c3baa4a2df6ec9d2d9f300e70ea001250d54",
+          "method": "table",
+          "page": 8,
+          "section": "R-T chart",
+          "source_text": "R-T table row at 125\u00b0C."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.356,
+      "min": 0.326,
+      "name": "resistance_at_temperature",
+      "typ": 0.341,
+      "unit": "kohm"
+    }
+  ],
+  "status": "active",
+  "warnings": []
+}

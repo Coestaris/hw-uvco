@@ -1,0 +1,206 @@
+{
+  "categories": [
+    "capacitor"
+  ],
+  "description": "1e-07 F 50 V X7R MLCC",
+  "document": {
+    "identity": {
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "61a606825ab314ea318cfb5362848a62fdffb851efa9818d642e9a541c56a648",
+          "method": "table",
+          "page": 2,
+          "section": "Document identity / ordering information",
+          "source_text": "The global ordering code decodes the requested MPN as 0805, \u00b110%, X7R, 50 V, 100 nF."
+        }
+      ],
+      "family_members": [
+        "CC0805KRX7R9BB104"
+      ],
+      "package_variant": "0805 (2012 metric)",
+      "requested_mpn": "CC0805KRX7R9BB104",
+      "status": "family"
+    },
+    "manufacturer": "YAGEO",
+    "pages": 29,
+    "path": "CC0805KRX7R9BB104.pdf",
+    "sha256": "61a606825ab314ea318cfb5362848a62fdffb851efa9818d642e9a541c56a648"
+  },
+  "extracted_at": "2026-09-23T12:37:32.695247+00:00",
+  "extractor_version": "manual-evidence-2",
+  "family": "0805 X7R multilayer ceramic capacitor",
+  "manufacturer": "YAGEO",
+  "missing": [
+    "Terminal numbering is not designated; this is a symmetric unpolarized two-terminal capacitor.",
+    "Part-specific DC-bias capacitance loss, ESR, ESL, self-resonant frequency, and ripple-current rating are not published as guaranteed numeric values.",
+    "No manufacturer simulation model is identified in the datasheet."
+  ],
+  "models": [],
+  "mpn": "CC0805KRX7R9BB104",
+  "packages": [
+    {
+      "applicable_mpns": [
+        "CC0805KRX7R9BB104"
+      ],
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "61a606825ab314ea318cfb5362848a62fdffb851efa9818d642e9a541c56a648",
+          "method": "table",
+          "page": 3,
+          "section": "Package",
+          "source_text": "Manufacturer 0805 dimensional table."
+        }
+      ],
+      "exposed_pad": false,
+      "manufacturer_name": "0805 (2012 metric)",
+      "package_body": {
+        "height_mm": 0.85,
+        "length_mm": 2.0,
+        "width_mm": 1.25
+      },
+      "pin_count": 2,
+      "thermal_pad": false
+    }
+  ],
+  "pins": [],
+  "quality": {
+    "base_specs": 95,
+    "category_specs": 95,
+    "evidence": 100,
+    "identity": 90,
+    "overall": 94,
+    "pinout": 100
+  },
+  "schema_version": 1,
+  "specs": [
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "61a606825ab314ea318cfb5362848a62fdffb851efa9818d642e9a541c56a648",
+          "method": "table",
+          "page": 2,
+          "section": "Product lineup / ordering code",
+          "source_text": "Manufacturer product lineup / ordering code row for capacitance."
+        }
+      ],
+      "fact_kind": "fact",
+      "name": "capacitance",
+      "typ": 1e-07,
+      "unit": "F"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "61a606825ab314ea318cfb5362848a62fdffb851efa9818d642e9a541c56a648",
+          "method": "table",
+          "page": 2,
+          "section": "Product lineup / ordering code",
+          "source_text": "Manufacturer product lineup / ordering code row for capacitance_tolerance."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 10,
+      "min": -10,
+      "name": "capacitance_tolerance",
+      "unit": "%"
+    },
+    {
+      "applicability": null,
+      "classification": "recommended_operating_condition",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "61a606825ab314ea318cfb5362848a62fdffb851efa9818d642e9a541c56a648",
+          "method": "table",
+          "page": 2,
+          "section": "Product lineup / ordering code",
+          "source_text": "Manufacturer product lineup / ordering code row for rated_voltage."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 50,
+      "name": "rated_voltage",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "recommended_operating_condition",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "61a606825ab314ea318cfb5362848a62fdffb851efa9818d642e9a541c56a648",
+          "method": "table",
+          "page": 14,
+          "section": "Temperature characteristic",
+          "source_text": "Manufacturer temperature characteristic row for operating_temperature."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 125,
+      "min": -55,
+      "name": "operating_temperature",
+      "unit": "degC"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "61a606825ab314ea318cfb5362848a62fdffb851efa9818d642e9a541c56a648",
+          "method": "table",
+          "page": 14,
+          "section": "Temperature characteristic",
+          "source_text": "Manufacturer temperature characteristic row for temperature_capacitance_change."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 15,
+      "min": -15,
+      "name": "temperature_capacitance_change",
+      "unit": "%"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "61a606825ab314ea318cfb5362848a62fdffb851efa9818d642e9a541c56a648",
+          "method": "table",
+          "page": 14,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for dissipation_factor."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 10,
+      "name": "dissipation_factor",
+      "unit": "%"
+    }
+  ],
+  "status": "active",
+  "warnings": [
+    "Typical curves are not promoted to guaranteed numeric facts."
+  ]
+}

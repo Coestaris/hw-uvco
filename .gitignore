@@ -1,0 +1,106 @@
+# KiCad temporary / backup files
+
+*.000
+
+*.bak
+
+*.bck
+
+*.kicad_pcb-bak
+
+*.kicad_sch-bak
+
+*-backups
+
+*-cache*
+
+*-bak
+
+*-bak*
+
+*.pdf
+!assets/**/*.pdf
+*~
+
+~*
+
+_autosave-*
+
+#auto_saved_files#
+
+\#auto_saved_files\#
+
+*.tmp
+
+*-save.pro
+
+*-save.kicad_pcb
+
+fp-info-cache
+
+~*.lck
+
+
+__pycache__
+.venv/
+
+# SQLite runtime files (the component database itself is tracked)
+
+components.sqlite3-journal
+components.sqlite3-shm
+components.sqlite3-wal
+
+# Netlist files exported from schematic
+
+*.net
+
+
+# Autorouter files
+
+*.dsn
+
+*.ses
+
+
+# Exported BOM files
+
+*.xml
+
+*.csv
+
+# Generated release artifacts are published by GitHub Actions, never committed.
+projects/**/manufacturing/
+
+
+# KiCad 6+ archived backups
+
+**/*-backups/*.zip
+
+# KiCad automatic restore snapshots are superseded by Git history
+
+**/_restore_backup_*/
+
+
+# KiCad 9+ local history
+
+.history
+
+
+# Local project UI/settings state
+
+*.kicad_prl
+
+
+# IDE project metadata
+
+.idea/
+
+# Local scratch and validation outputs
+/tmp/
+/.release/
+
+# Local infrastructure links and project catalog
+/tools
+/.codex/skills
+/.github/infra-workflows
+/.hw-infra/

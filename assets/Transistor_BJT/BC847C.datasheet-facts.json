@@ -1,0 +1,476 @@
+{
+  "categories": [
+    "transistor"
+  ],
+  "description": "NPN small-signal transistor",
+  "document": {
+    "identity": {
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 1,
+          "section": "Document identity / ordering information",
+          "source_text": "The first-page marking table explicitly maps BC847C to its device code."
+        }
+      ],
+      "family_members": [
+        "BC847C"
+      ],
+      "package_variant": "SOT-23",
+      "requested_mpn": "BC847C",
+      "status": "exact"
+    },
+    "manufacturer": "Zhuhai Hongjiacheng Technology Co., Ltd.",
+    "pages": 4,
+    "path": "BC847C.pdf",
+    "sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d"
+  },
+  "extracted_at": "2026-09-23T12:37:32.695247+00:00",
+  "extractor_version": "manual-evidence-2",
+  "family": "BC846\u2013BC848",
+  "manufacturer": "Zhuhai Hongjiacheng Technology Co., Ltd.",
+  "missing": [
+    "Safe-operating-area, switching times, noise figure, and a manufacturer simulation model are not published."
+  ],
+  "models": [],
+  "mpn": "BC847C",
+  "packages": [
+    {
+      "applicable_mpns": [
+        "BC847C"
+      ],
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 1,
+          "section": "Package",
+          "source_text": "SOT-23 package and device marking are shown on page 1."
+        }
+      ],
+      "exposed_pad": false,
+      "manufacturer_name": "SOT-23",
+      "pin_count": 3,
+      "pitch_mm": 0.95,
+      "thermal_pad": false
+    }
+  ],
+  "pins": [
+    {
+      "active_level": null,
+      "aliases": [],
+      "description": "Base",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 1,
+          "section": "Pinning information",
+          "source_text": "Pin 1: B (Base)."
+        }
+      ],
+      "functions": [
+        "Base"
+      ],
+      "internal_pull": null,
+      "name": "B",
+      "numbers": [
+        "1"
+      ],
+      "output_structure": null,
+      "power_domain": null,
+      "type": "input"
+    },
+    {
+      "active_level": null,
+      "aliases": [],
+      "description": "Emitter",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 1,
+          "section": "Pinning information",
+          "source_text": "Pin 2: E (Emitter)."
+        }
+      ],
+      "functions": [
+        "Emitter"
+      ],
+      "internal_pull": null,
+      "name": "E",
+      "numbers": [
+        "2"
+      ],
+      "output_structure": null,
+      "power_domain": null,
+      "type": "passive"
+    },
+    {
+      "active_level": null,
+      "aliases": [],
+      "description": "Collector",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 1,
+          "section": "Pinning information",
+          "source_text": "Pin 3: C (Collector)."
+        }
+      ],
+      "functions": [
+        "Collector"
+      ],
+      "internal_pull": null,
+      "name": "C",
+      "numbers": [
+        "3"
+      ],
+      "output_structure": null,
+      "power_domain": null,
+      "type": "passive"
+    }
+  ],
+  "quality": {
+    "base_specs": 95,
+    "category_specs": 95,
+    "evidence": 100,
+    "identity": 100,
+    "overall": 96,
+    "pinout": 100
+  },
+  "schema_version": 1,
+  "specs": [
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [
+        {
+          "operator": "text",
+          "parameter": "polarity",
+          "unit": null,
+          "value": "positive"
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for collector_base_voltage_magnitude."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 50,
+      "name": "collector_base_voltage_magnitude",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [
+        {
+          "operator": "text",
+          "parameter": "polarity",
+          "unit": null,
+          "value": "positive"
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for collector_emitter_voltage_magnitude."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 45,
+      "name": "collector_emitter_voltage_magnitude",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [
+        {
+          "operator": "text",
+          "parameter": "polarity",
+          "unit": null,
+          "value": "positive"
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for emitter_base_voltage_magnitude."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 6,
+      "name": "emitter_base_voltage_magnitude",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for collector_current_magnitude."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.1,
+      "name": "collector_current_magnitude",
+      "unit": "A"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for collector_power_dissipation."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.2,
+      "name": "collector_power_dissipation",
+      "unit": "W"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for storage_temperature."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 150,
+      "min": -55,
+      "name": "storage_temperature",
+      "unit": "degC"
+    },
+    {
+      "applicability": null,
+      "classification": "absolute_maximum",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for junction_temperature."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 150,
+      "min": -55,
+      "name": "junction_temperature",
+      "unit": "degC"
+    },
+    {
+      "applicability": null,
+      "classification": "thermal_characteristic",
+      "conditions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 1,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for junction_to_ambient_thermal_resistance."
+        }
+      ],
+      "fact_kind": "fact",
+      "name": "junction_to_ambient_thermal_resistance",
+      "typ": 625,
+      "unit": "degC/W"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "collector_current",
+          "unit": "mA",
+          "value": 2
+        },
+        {
+          "operator": "=",
+          "parameter": "collector_emitter_voltage",
+          "unit": "V",
+          "value": 5
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for dc_current_gain."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 800,
+      "min": 420,
+      "name": "dc_current_gain",
+      "unit": null
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "collector_current",
+          "unit": "mA",
+          "value": 100
+        },
+        {
+          "operator": "=",
+          "parameter": "base_current",
+          "unit": "mA",
+          "value": 5
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for collector_emitter_saturation_voltage_magnitude."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 0.5,
+      "name": "collector_emitter_saturation_voltage_magnitude",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "collector_current",
+          "unit": "mA",
+          "value": 100
+        },
+        {
+          "operator": "=",
+          "parameter": "base_current",
+          "unit": "mA",
+          "value": 5
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for base_emitter_saturation_voltage_magnitude."
+        }
+      ],
+      "fact_kind": "fact",
+      "max": 1.1,
+      "name": "base_emitter_saturation_voltage_magnitude",
+      "unit": "V"
+    },
+    {
+      "applicability": null,
+      "classification": "guaranteed_electrical_characteristic",
+      "conditions": [
+        {
+          "operator": "=",
+          "parameter": "collector_current",
+          "unit": "mA",
+          "value": 10
+        },
+        {
+          "operator": "=",
+          "parameter": "collector_emitter_voltage",
+          "unit": "V",
+          "value": 5
+        },
+        {
+          "operator": "=",
+          "parameter": "test_frequency",
+          "unit": "MHz",
+          "value": 100
+        }
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "confidence": "high",
+          "document_sha256": "a71d4649fb880823d0072d46b0fed785bd4d31e8d5924b52b421d6bae73a104d",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical characteristics",
+          "source_text": "Manufacturer electrical characteristics row for transition_frequency."
+        }
+      ],
+      "fact_kind": "fact",
+      "min": 100,
+      "name": "transition_frequency",
+      "unit": "MHz"
+    }
+  ],
+  "status": "active",
+  "warnings": []
+}
