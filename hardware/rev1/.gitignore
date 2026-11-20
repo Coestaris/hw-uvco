@@ -1,3 +1,2 @@
-# Keep reviewed manufacturing exports in version control.
-!manufacturing/*.csv
-!manufacturing/*.pdf
+# Manufacturing exports are attached to releases.
+manufacturing/
