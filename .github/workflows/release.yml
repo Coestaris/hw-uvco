@@ -6,6 +6,11 @@ on:
         description: Hardware revision number (1 for rev1)
         required: true
         type: number
+      refresh:
+        description: Regenerate existing release assets without moving its tag
+        required: true
+        default: false
+        type: boolean
 permissions:
   contents: write
   packages: read
@@ -53,15 +58,42 @@ jobs:
             --name "$name" --revision "$REVISION" --format json > "$RUNNER_TEMP/project.json"
           key="$(jq -er 'select(.status == "ok") | .data.key' "$RUNNER_TEMP/project.json")"
           printf 'key=%s\nname=%s\n' "$key" "$name" >> "$GITHUB_OUTPUT"
-      - name: Reject existing release
+      - name: Check release publication state
+        id: publication
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RELEASE_TAG: rev${{ inputs.revision }}
+          REFRESH: ${{ inputs.refresh }}
         run: |
-          if gh release view "$RELEASE_TAG" >/dev/null 2>&1 || \
-            gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$RELEASE_TAG" >/dev/null 2>&1; then
-            echo "::error::$RELEASE_TAG already exists."
-            exit 1
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            if [[ "$REFRESH" != true ]]; then
+              echo "::error::$RELEASE_TAG exists; select refresh to regenerate its assets."
+              exit 1
+            fi
+            gh api "repos/$GITHUB_REPOSITORY/compare/$RELEASE_TAG...$GITHUB_SHA" > "$RUNNER_TEMP/release-comparison.json"
+            if ! jq -e '
+              def source:
+                . == ".hw-project.json" or startswith("assets/") or
+                startswith("mechanical/") or startswith("sim/") or startswith("software/") or
+                (startswith("hardware/") and (endswith(".md") | not));
+              (.status == "ahead" or .status == "identical") and
+              ((.files | length) < 300) and
+              all(.files[]; all(([.filename, .previous_filename] | map(select(. != null)))[]; source | not))
+            ' "$RUNNER_TEMP/release-comparison.json" >/dev/null; then
+              echo "::error::Refresh requires unchanged design sources and complete comparison data. Use a new revision for design changes."
+              exit 1
+            fi
+            printf 'exists=true\n' >> "$GITHUB_OUTPUT"
+          else
+            if [[ "$REFRESH" == true ]]; then
+              echo "::error::$RELEASE_TAG has no release to refresh."
+              exit 1
+            fi
+            if gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$RELEASE_TAG" >/dev/null 2>&1; then
+              echo "::error::$RELEASE_TAG exists without a release."
+              exit 1
+            fi
+            printf 'exists=false\n' >> "$GITHUB_OUTPUT"
           fi
       - name: Select pinned release image
         id: image
@@ -106,11 +138,15 @@ jobs:
           PROJECT_NAME: ${{ steps.project.outputs.name }}
           REVISION: ${{ inputs.revision }}
           INFRA_SHA: ${{ steps.pin.outputs.sha }}
+          REFRESH: ${{ steps.publication.outputs.exists }}
         run: |
           notes="$RUNNER_TEMP/release/notes.md"
           {
             printf '# %s rev%s\n\n' "$PROJECT_NAME" "$REVISION"
             printf 'Full release gate and artifact export passed.\n\n'
+            if [[ "$REFRESH" == true ]]; then
+              printf 'Assets regenerated after verifying unchanged design sources; the original tag is preserved.\n\n'
+            fi
             printf 'Source commit: %s\n\nInfrastructure commit: %s\n\n' "$GITHUB_SHA" "$INFRA_SHA"
             printf '## Artifacts\n\n'
             while IFS= read -r artifact; do
@@ -123,7 +159,14 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RELEASE_TAG: rev${{ inputs.revision }}
           PROJECT_NAME: ${{ steps.project.outputs.name }}
+          EXISTS: ${{ steps.publication.outputs.exists }}
         run: |
-          gh release create "$RELEASE_TAG" "$RUNNER_TEMP"/release/artifacts/* \
+          if [[ "$EXISTS" == true ]]; then
+            gh release upload "$RELEASE_TAG" "$RUNNER_TEMP"/release/artifacts/* --clobber
+            gh release edit "$RELEASE_TAG" --title "$PROJECT_NAME $RELEASE_TAG" \
+              --notes-file "$RUNNER_TEMP/release/notes.md" --latest
+          else
+            gh release create "$RELEASE_TAG" "$RUNNER_TEMP"/release/artifacts/* \
             --target "$GITHUB_SHA" --title "$PROJECT_NAME $RELEASE_TAG" \
             --notes-file "$RUNNER_TEMP/release/notes.md" --latest
+          fi

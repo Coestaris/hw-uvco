@@ -5,7 +5,7 @@ exponential pitch control, a CD40106B oscillator core, saw and pulse signal path
 and a mixed audio output. Coarse/fine tuning, frequency modulation, and
 pulse-width modulation are exposed through the front-panel controls and CV inputs.
 
-![VCO1 rev1 board, perspective view](docs/images/rev1-perspective.png)
+![VCO1 rev1 board, perspective view](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-3d-corner.png)
 
 ## Goals
 
@@ -61,12 +61,11 @@ The schematic is organized into four sheets:
 
 ## Rev1 board
 
-These views are rendered from the rev1 manufacturing PCB PDF using the actual
-board and component models.
+These native KiCad views are generated and published with the rev1 release.
 
 | Top | Bottom |
 | --- | --- |
-| ![VCO1 rev1 top view](docs/images/rev1-top.png) | ![VCO1 rev1 bottom view](docs/images/rev1-bottom.png) |
+| ![VCO1 rev1 top view](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-3d-top.png) | ![VCO1 rev1 bottom view](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-3d-bottom.png) |
 
 ## Rev1 manufacturing release
 
@@ -89,7 +88,6 @@ Clone this repository and run `git lfs pull`, then open
 The project includes its required models and datasheets under `assets/`;
 initializing `infra/` is optional for ordinary KiCad work.
 
-Maintainer setup, AI tooling, and release automation are described in
-[development notes](docs/development.md). The private `infra/` submodule owns the
-tooling, catalog seed, reusable actions, and release image. Future mechanical and
-software work belongs in `mechanical/` and `software/`.
+The private `infra/` submodule supplies the maintainer tools, catalog seed,
+reusable actions, and release image. Mechanical and software sources belong in
+`mechanical/` and `software/`.
