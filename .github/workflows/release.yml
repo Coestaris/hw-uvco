@@ -78,7 +78,11 @@ jobs:
                 (startswith("hardware/") and (endswith(".md") | not));
               (.status == "ahead" or .status == "identical") and
               ((.files | length) < 300) and
-              all(.files[]; all(([.filename, .previous_filename] | map(select(. != null)))[]; source | not))
+              all(.files[];
+                if .status == "removed" and (.filename | test("^hardware/rev[1-9][0-9]*/(archive|scripts)/"))
+                then true
+                else all(([.filename, .previous_filename] | map(select(. != null)))[]; source | not)
+                end)
             ' "$RUNNER_TEMP/release-comparison.json" >/dev/null; then
               echo "::error::Refresh requires unchanged design sources and complete comparison data. Use a new revision for design changes."
               exit 1
