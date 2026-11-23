@@ -74,7 +74,7 @@ jobs:
             if ! jq -e '
               def source:
                 . == ".hw-project.json" or startswith("assets/") or
-                startswith("mechanical/") or startswith("sim/") or startswith("software/") or
+                startswith("sim/") or
                 (startswith("hardware/") and (endswith(".md") | not));
               (.status == "ahead" or .status == "identical") and
               ((.files | length) < 300) and
