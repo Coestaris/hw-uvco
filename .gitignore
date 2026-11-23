@@ -104,3 +104,4 @@ projects/**/manufacturing/
 /.codex/skills
 /.github/infra-workflows
 /.hw-infra/
+AGENTS.md
