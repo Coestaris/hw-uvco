@@ -24,13 +24,7 @@ flowchart LR
     Power["±12 V power"] --> Rails["Protection, filtering and ±8 V regulation"]
 ```
 
-## Hardware projects
-
-| Board | Purpose | Design | Simulation |
-| --- | --- | --- | --- |
-| rev1 | Modular synthesizer oscillator | [KiCad project](hardware/rev1/vco1_rev1.kicad_pro) | — |
-
-### rev1 - modular synthesizer oscillator
+## rev1
 
 Rev1 groups power, signal generation, panel I/O, and indicators on four schematic sheets. [Rev1 release](https://github.com/Coestaris/hw-vco1/releases/tag/rev1)
 
