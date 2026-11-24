@@ -1,29 +1,14 @@
 # VCO1
 
-VCO1 is a voltage-controlled oscillator for a modular synthesizer. It combines
-exponential pitch control, a CD40106B oscillator core, saw and pulse signal paths,
-and a mixed audio output. Coarse/fine tuning, frequency modulation, and
-pulse-width modulation are exposed through the front-panel controls and CV inputs.
+Rev1 has a published manufacturing release. VCO1 is a voltage-controlled oscillator for a modular synthesizer.
 
-![VCO1 rev1 board, perspective view](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-3d-corner.png)
+> **AI use.** The authors use AI for component research, design validation, and release preparation. The authors make the technical and visual decisions and take responsibility for them.
 
-## Goals
+## Goals and architecture
 
-- Control pitch from a V/oct input and an attenuated FM input, alongside coarse
-  and fine tuning.
-- Shape the pulse waveform with manual duty control and an attenuated PWM CV input.
-- Mix the saw and pulse signals into one buffered output.
-- Support bring-up and calibration with test points, a power indicator, and
-  indicators for the pitch, FM, and PWM inputs.
-- Keep the circuit, PCB, required component models, and manufacturing files usable
-  independently of the private AI toolset.
+VCO1 combines exponential pitch control with a CD40106B oscillator core and a buffered mix of saw and pulse waves. The front panel provides coarse and fine tuning, V/oct and attenuated FM inputs, and manual duty and PWM controls.
 
-## Architecture
-
-The board takes ±12 V power through a 10-pin header. Input protection, filtering,
-and 78L08/79L08 regulators provide the ±8 V analog rails. TL074 amplifiers handle
-control summing, signal conditioning, mixing, and indication; BC847C/BC857C
-transistors form part of the discrete control circuitry.
+The board accepts ±12 V through a 10-pin header. The 78L08 and 79L08 regulators supply the ±8 V analog rails. TL074 amplifiers handle control summing, signal conditioning, mixing, and indication. BC847C and BC857C transistors form part of the discrete control circuit. Test points and indicators support bring-up and calibration.
 
 ```mermaid
 flowchart LR
@@ -39,55 +24,32 @@ flowchart LR
     Power["±12 V power"] --> Rails["Protection, filtering and ±8 V regulation"]
 ```
 
-The schematic is organized into four sheets:
+## Hardware projects
 
-| Sheet | Role |
+| Board | Purpose | Design | Simulation |
+| --- | --- | --- | --- |
+| rev1 | Modular synthesizer oscillator | [KiCad project](hardware/rev1/vco1_rev1.kicad_pro) | — |
+
+### rev1 - modular synthesizer oscillator
+
+Rev1 groups power, signal generation, panel I/O, and indicators on four schematic sheets. [Rev1 release](https://github.com/Coestaris/hw-vco1/releases/tag/rev1)
+
+![VCO1 Rev1, perspective view](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-3d-corner.png)
+
+<details>
+<summary>Top and bottom views</summary>
+
+![VCO1 Rev1, top view](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-3d-top.png)
+
+![VCO1 Rev1, bottom view](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-3d-bottom.png)
+
+</details>
+
+| File | Download |
 | --- | --- |
-| [Power and project root](hardware/rev1/vco1_rev1.kicad_sch) | Supply input, protection, regulation, and decoupling. |
-| [Signal](hardware/rev1/signal.kicad_sch) | Exponential converter, oscillator core, saw buffer, pulse comparator, and mixing/buffering. |
-| [I/O](hardware/rev1/io.kicad_sch) | Audio/CV jacks, input protection, and tuning, modulation, and mix controls. |
-| [Indication](hardware/rev1/indication.kicad_sch) | Power and input-signal indicators. |
-
-## Interfaces and controls
-
-| Interface | Purpose |
-| --- | --- |
-| V/OCT IN | Pitch-control voltage input. |
-| FM IN | Frequency-modulation input with attenuation. |
-| PWM CV IN | Pulse-width control input with attenuation. |
-| OUT | Mixed saw/pulse output. |
-| Front-panel controls | Coarse tuning, fine tuning, PWM duty, FM attenuation, PWM CV attenuation, and mix level. |
-| Power header | ±12 V supply and ground. |
-
-## Rev1 board
-
-These native KiCad views are generated and published with the rev1 release.
-
-| Top | Bottom |
-| --- | --- |
-| ![VCO1 rev1 top view](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-3d-top.png) | ![VCO1 rev1 bottom view](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-3d-bottom.png) |
-
-## Rev1 manufacturing release
-
-The [rev1 release](https://github.com/Coestaris/hw-vco1/releases/tag/rev1)
-contains the validated manufacturing package:
-
-| File | Use |
-| --- | --- |
-| [Schematic PDF](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-schematic.pdf) | Four-sheet circuit reference. |
-| [PCB PDF](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-pcb.pdf) | Layer plots and three 3D board views. |
-| [Gerber and drill ZIP](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-gerbers.zip) | PCB fabrication files. |
-| [3D assembly, STPZ](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1.stpz) | Mechanical assembly reference. |
-| [JLCPCB BOM](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-jlcpcb-bom.csv) | Assembly parts list. |
-| [JLCPCB placement CSV](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-jlcpcb-pnp.csv) | Assembly positions and rotations. |
-
-## Working with the hardware
-
-Clone this repository and run `git lfs pull`, then open
-[`hardware/rev1/vco1_rev1.kicad_pro`](hardware/rev1/vco1_rev1.kicad_pro) in KiCad 10.
-The project includes its required models and datasheets under `assets/`;
-initializing `infra/` is optional for ordinary KiCad work.
-
-The private `infra/` submodule supplies the maintainer tools, catalog seed,
-reusable actions, and release image. Mechanical and software sources belong in
-`mechanical/` and `software/`.
+| Schematic PDF | [vco1_rev1-schematic.pdf](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-schematic.pdf) |
+| PCB PDF | [vco1_rev1-pcb.pdf](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-pcb.pdf) |
+| Gerbers and drill files | [vco1_rev1-gerbers.zip](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-gerbers.zip) |
+| JLCPCB BOM | [vco1_rev1-jlcpcb-bom.csv](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-jlcpcb-bom.csv) |
+| JLCPCB placement | [vco1_rev1-jlcpcb-pnp.csv](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-jlcpcb-pnp.csv) |
+| 3D assembly model | [vco1_rev1.stpz](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1.stpz) |

@@ -2,10 +2,10 @@ name: Hardware release
 on:
   workflow_dispatch:
     inputs:
-      revision:
-        description: Hardware revision number (1 for rev1)
+      target:
+        description: Hardware release target (rev1)
         required: true
-        type: number
+        type: string
       refresh:
         description: Regenerate existing release assets without moving its tag
         required: true
@@ -15,7 +15,7 @@ permissions:
   contents: write
   packages: read
 concurrency:
-  group: hardware-release-rev${{ inputs.revision }}
+  group: hardware-release
   cancel-in-progress: false
 jobs:
   release:
@@ -48,21 +48,24 @@ jobs:
       - name: Set up project tooling
         id: setup
         run: infra/setup.sh --apply
-      - name: Resolve hardware revision
+      - name: Resolve hardware release target
         id: project
         env:
-          REVISION: ${{ inputs.revision }}
+          RELEASE_TARGET: ${{ inputs.target }}
         run: |
           name="$(jq -er '.name' .hw-project.json)"
           uv run --project infra/tools --locked kicad10_tree project resolve \
-            --name "$name" --revision "$REVISION" --format json > "$RUNNER_TEMP/project.json"
+            --name "$name" --target "$RELEASE_TARGET" --format json > "$RUNNER_TEMP/project.json"
           key="$(jq -er 'select(.status == "ok") | .data.key' "$RUNNER_TEMP/project.json")"
-          printf 'key=%s\nname=%s\n' "$key" "$name" >> "$GITHUB_OUTPUT"
+          hardware="$(jq -er '.data.hardware' "$RUNNER_TEMP/project.json")"
+          tag="${hardware##*/}"
+          printf 'key=%s\nname=%s\nhardware=%s\ntag=%s\n' "$key" "$name" "$hardware" "$tag" >> "$GITHUB_OUTPUT"
       - name: Check release publication state
         id: publication
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RELEASE_TAG: rev${{ inputs.revision }}
+          HARDWARE_DIR: ${{ steps.project.outputs.hardware }}
+          RELEASE_TAG: ${{ steps.project.outputs.tag }}
           REFRESH: ${{ inputs.refresh }}
         run: |
           if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
@@ -71,15 +74,15 @@ jobs:
               exit 1
             fi
             gh api "repos/$GITHUB_REPOSITORY/compare/$RELEASE_TAG...$GITHUB_SHA" > "$RUNNER_TEMP/release-comparison.json"
-            if ! jq -e '
+            if ! jq -e --arg hardware "$HARDWARE_DIR/" --arg sim "sim/$RELEASE_TAG/" '
               def source:
                 . == ".hw-project.json" or startswith("assets/") or
-                startswith("sim/") or
-                (startswith("hardware/") and (endswith(".md") | not));
+                startswith($sim) or
+                (startswith($hardware) and (endswith(".md") | not));
               (.status == "ahead" or .status == "identical") and
               ((.files | length) < 300) and
               all(.files[];
-                if .status == "removed" and (.filename | test("^hardware/rev[1-9][0-9]*/(archive|scripts)/"))
+                if .status == "removed" and (.filename | startswith($hardware + "archive/") or startswith($hardware + "scripts/"))
                 then true
                 else all(([.filename, .previous_filename] | map(select(. != null)))[]; source | not)
                 end)
@@ -130,23 +133,23 @@ jobs:
           project: ${{ steps.project.outputs.key }}
           image: ${{ steps.image.outputs.name }}
       - name: Retain reports and artifacts
-        if: always() && steps.setup.outcome == 'success'
+        if: always() && steps.project.outcome == 'success'
         uses: actions/upload-artifact@v7
         with:
-          name: rev${{ inputs.revision }}-build-${{ github.run_number }}
+          name: ${{ steps.project.outputs.tag }}-build-${{ github.run_number }}
           path: ${{ runner.temp }}/release/
           if-no-files-found: warn
           retention-days: 30
       - name: Build release notes
         env:
           PROJECT_NAME: ${{ steps.project.outputs.name }}
-          REVISION: ${{ inputs.revision }}
+          RELEASE_TAG: ${{ steps.project.outputs.tag }}
           INFRA_SHA: ${{ steps.pin.outputs.sha }}
           REFRESH: ${{ steps.publication.outputs.exists }}
         run: |
           notes="$RUNNER_TEMP/release/notes.md"
           {
-            printf '# %s rev%s\n\n' "$PROJECT_NAME" "$REVISION"
+            printf '# %s %s\n\n' "$PROJECT_NAME" "$RELEASE_TAG"
             printf 'Full release gate and artifact export passed.\n\n'
             if [[ "$REFRESH" == true ]]; then
               printf 'Assets regenerated after verifying unchanged design sources; the original tag is preserved.\n\n'
@@ -158,10 +161,10 @@ jobs:
               printf -- '- %s — SHA-256 %s\n' "${artifact##*/}" "$checksum"
             done < <(find "$RUNNER_TEMP/release/artifacts" -maxdepth 1 -type f | sort)
           } > "$notes"
-      - name: Publish hardware revision
+      - name: Publish hardware release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RELEASE_TAG: rev${{ inputs.revision }}
+          RELEASE_TAG: ${{ steps.project.outputs.tag }}
           PROJECT_NAME: ${{ steps.project.outputs.name }}
           EXISTS: ${{ steps.publication.outputs.exists }}
         run: |
