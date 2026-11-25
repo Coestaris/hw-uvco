@@ -1,4 +1,4 @@
-# VCO1
+# μVCO - voltage-controlled oscillator for a modular synthesizer
 
 > **AI use.** The authors use AI for additional validation, component research, testbench setup and simulation, intermediate design reviews, release setup, and assistance with KiCad and 3D model edits. The authors developed the original designs and schematics manually, and other people reviewed them. The authors make the technical and visual decisions and take responsibility for them.
 
