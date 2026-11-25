@@ -1,0 +1,108 @@
+* End-to-end uVCO signal chain, matched to the current three schematic sheets.
+* The OTA is a differential-pair functional model; see simulation report.
+.title uVCO full signal chain
+.include ../models/uvco_oscillator_models.lib
+
+.param CV=0 RTRIM=25.57k RPTC=10k CINT=10n C6COMP=100p COMP_VOS=2m
+.param R23_TRIM=3646 R24_TRIM=4991 R29_TRIM=5k RV1_FRAC=0.5
+.param IABC=250u VT=25.85m
+.param TSTOP=100m TSTEP=200n
+.options tnom=25 method=gear reltol=2e-5 abstol=1e-12 vntol=1e-8 chgtol=1e-15
+
+V12P +12V 0 12
+V12N 0 -12V 12
+V5 +5V 0 5
+V2V5 +2V5 0 2.5
+VCV CV 0 {CV}
+
+* Oscillator core (oscillator_core.kicad_sch).
+R16 CV cv_sum 10k
+R15 cv_inv cv_sum 10k
+C20 cv_inv cv_sum 100p
+XU9B cv_inv 0 cv_sum +12V -12V TPA1862_CH
+R17 cv_inv scale_trim 536k
+R13 scale_trim expo_sum {RTRIM}
+RTH expo_sum base_a {RPTC} tc1=0.0033
+C17 expo_sum base_a 100p
+R12 expo_drive base_a 1k
+XU9A expo_drive 0 expo_sum +12V -12V TPA1862_CH
+VSENSE control_current q1a_c 0
+Q1A q1a_c base_a emit DI_DMMT3904W
+Q1B ref_col 0 emit DI_DMMT3904W
+R11 +5V ref_col 1Meg
+R10 emit servo_out 1k
+C6 ref_col servo_out {C6COMP}
+XU1A servo_out 0 ref_col +12V -12V TPA1862_CH
+C3 saw_raw control_current {CINT}
+XU1B saw_raw 0 control_current +12V -12V TPA1862_CH
+R4 saw_raw cmp_plus 90.9k
+R3 cmp_out cmp_plus 100k
+XU2 cmp_out cmp_plus +2V5 +5V 0 TP1961 VOS={COMP_VOS}
+R5 cmp_out reset_g 47
+R6 reset_g control_current 100k
+XQ2 reset_d reset_g control_current N7002
+R7 saw_raw reset_d 47
+XU4A level saw_raw level_sum +12V -12V TL072_CH
+R18 level level_sum 10k
+R19 +2V5 level_sum 100k
+R14 level SAW_ASYM 47
+RLOAD_SAW SAW_ASYM 0 1Meg
+
+* Triangle shaper: four matched 10k resistor networks, TL072 precision
+* rectifier with BAV99, and two TPA1862 level shifters.
+RRN1A 0 RN1_PLUS 10k
+RRN1B SAW_ASYM RN1_PLUS 10k
+RRN1C +2V5 RN1_MINUS 10k
+RRN1D SAW RN1_MINUS 10k
+XTRI_U1A SAW RN1_PLUS RN1_MINUS +12V -12V TPA1862_CH
+RRN4A 0 REF125 10k
+RRN4B +2V5 REF125 10k
+XTRI_U3A V1P25 REF125 V1P25 +12V -12V TL072_CH
+RRN4D SAW RECT_MINUS 10k
+RRN2A RECT_MINUS D_BOT 10k
+RRN2D RECT_MINUS D_TOP 10k
+XTRI_U2B D_MID 0 RECT_MINUS +12V -12V TL072_CH
+DTRI1 D_TOP D_MID BAV99_CH
+DTRI2 D_MID D_BOT BAV99_CH
+.model BAV99_CH D(IS=2n N=1.8 RS=1 CJO=1.5p TT=4n)
+RRN2C D_TOP RECT2_MINUS 10k
+RRN2B RECT2_MINUS TRI_ASYM 10k
+XTRI_U2A TRI_ASYM D_BOT RECT2_MINUS +12V -12V TL072_CH
+RRN3A 0 RN3_PLUS 10k
+RRN3B TRI_ASYM RN3_PLUS 10k
+RRN3C V1P25 RN3_MINUS 10k
+RRN3D TRIANGLE RN3_MINUS 10k
+XTRI_U1B TRIANGLE RN3_PLUS RN3_MINUS +12V -12V TPA1862_CH
+RTRI_LOAD TRIANGLE 0 100k
+
+* Sine shaper: U11B buffer; dry and OTA paths into U11A summer.
+* IABC approximates the current supplied by R27=43k to U10C pin 1.
+XU11B PREAMP TRIANGLE PREAMP +12V -12V TL072_CH
+RS21 PREAMP DRY_TRIM 8.2k
+RS23 DRY_TRIM SINE_SUM {R23_TRIM}
+RS22 PREAMP WET_TRIM 36k
+RS24 WET_TRIM OTA_MINUS {R24_TRIM}
+RS25 OTA_MINUS 0 1k
+RS18 +12V RV_TOP 100k
+RRV1A RV_TOP RV_WIPER {10k*RV1_FRAC}
+RRV1B RV_WIPER RV_BOT {10k*(1-RV1_FRAC)}
+RS19 RV_BOT -12V 100k
+RS20 RV_WIPER OTA_PLUS 100k
+RS26 OTA_PLUS 0 1k
+BOTA 0 SINE_SUM I={IABC*tanh((V(OTA_PLUS)-V(OTA_MINUS))/(2*VT))}
+RS28 SINE_SUM FB_TRIM 200k
+RS29 FB_TRIM SINE_OUT {R29_TRIM}
+C42 SINE_SUM SINE_OUT 4.7p
+XU11A SINE_OUT 0 SINE_SUM +12V -12V TL072_CH
+RLOAD_SINE SINE_OUT 0 100k
+
+.ic V(saw_raw)=0.2 V(cmp_out)=0 V(reset_g)=0 V(control_current)=0
+.tran {TSTEP} {TSTOP} 0 {TSTEP} uic
+.control
+set wr_singlescale
+set wr_vecnames
+run
+wrdata waveform.dat v(saw_asym) v(triangle) v(sine_out)
+quit
+.endc
+.end

@@ -69,6 +69,7 @@ components.sqlite3-wal
 *.csv
 
 # Generated release artifacts are published by GitHub Actions, never committed.
+hardware/**/manufacturing/
 projects/**/manufacturing/
 
 

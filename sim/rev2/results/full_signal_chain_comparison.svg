@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560">
+<rect width="100%" height="100%" fill="white"/>
+<defs><clipPath id="plot"><rect x="88" y="68" width="700" height="404"/></clipPath></defs>
+<text x="88" y="34" font-family="sans-serif" font-size="23" font-weight="bold">uVCO sine THD versus frequency</text>
+<line x1="88.0" y1="68" x2="88.0" y2="472" stroke="#e5e7eb"/>
+<text x="88.0" y="494" text-anchor="middle" font-family="sans-serif" font-size="12">30</text>
+<line x1="215.7" y1="68" x2="215.7" y2="472" stroke="#e5e7eb"/>
+<text x="215.7" y="494" text-anchor="middle" font-family="sans-serif" font-size="12">100</text>
+<line x1="332.3" y1="68" x2="332.3" y2="472" stroke="#e5e7eb"/>
+<text x="332.3" y="494" text-anchor="middle" font-family="sans-serif" font-size="12">300</text>
+<line x1="460.0" y1="68" x2="460.0" y2="472" stroke="#e5e7eb"/>
+<text x="460.0" y="494" text-anchor="middle" font-family="sans-serif" font-size="12">1000</text>
+<line x1="576.6" y1="68" x2="576.6" y2="472" stroke="#e5e7eb"/>
+<text x="576.6" y="494" text-anchor="middle" font-family="sans-serif" font-size="12">3000</text>
+<line x1="704.3" y1="68" x2="704.3" y2="472" stroke="#e5e7eb"/>
+<text x="704.3" y="494" text-anchor="middle" font-family="sans-serif" font-size="12">10000</text>
+<line x1="788.0" y1="68" x2="788.0" y2="472" stroke="#e5e7eb"/>
+<text x="788.0" y="494" text-anchor="middle" font-family="sans-serif" font-size="12">22000</text>
+<line x1="88" y1="425.3" x2="788" y2="425.3" stroke="#e5e7eb"/>
+<text x="78" y="429.3" text-anchor="end" font-family="sans-serif" font-size="12">0.1%</text>
+<line x1="88" y1="378.5" x2="788" y2="378.5" stroke="#e5e7eb"/>
+<text x="78" y="382.5" text-anchor="end" font-family="sans-serif" font-size="12">0.2%</text>
+<line x1="88" y1="316.7" x2="788" y2="316.7" stroke="#e5e7eb"/>
+<text x="78" y="320.7" text-anchor="end" font-family="sans-serif" font-size="12">0.5%</text>
+<line x1="88" y1="270.0" x2="788" y2="270.0" stroke="#e5e7eb"/>
+<text x="78" y="274.0" text-anchor="end" font-family="sans-serif" font-size="12">1%</text>
+<line x1="88" y1="223.3" x2="788" y2="223.3" stroke="#e5e7eb"/>
+<text x="78" y="227.3" text-anchor="end" font-family="sans-serif" font-size="12">2%</text>
+<line x1="88" y1="161.5" x2="788" y2="161.5" stroke="#e5e7eb"/>
+<text x="78" y="165.5" text-anchor="end" font-family="sans-serif" font-size="12">5%</text>
+<line x1="88" y1="114.7" x2="788" y2="114.7" stroke="#e5e7eb"/>
+<text x="78" y="118.7" text-anchor="end" font-family="sans-serif" font-size="12">10%</text>
+<line x1="88" y1="68.0" x2="788" y2="68.0" stroke="#e5e7eb"/>
+<text x="78" y="72.0" text-anchor="end" font-family="sans-serif" font-size="12">20%</text>
+<rect x="88" y="68" width="700" height="404" fill="none" stroke="#4b5563"/>
+<text x="438.0" y="537" text-anchor="middle" font-family="sans-serif" font-size="15">Measured oscillator frequency (Hz)</text>
+<polyline points="78.02,344.43 87.97,356.45 88.10,344.64 101.12,355.56 124.19,369.03 147.32,366.94 170.42,358.04 193.36,377.14 216.46,365.02 239.45,366.94 262.40,373.48 285.43,364.39 308.39,367.55 331.35,362.80 354.21,358.56 377.29,345.10 400.12,333.91 422.90,316.39 445.96,305.52 468.73,287.13 491.61,271.94 514.42,256.02 537.16,239.85 559.92,225.19 582.50,209.16 605.13,194.99 627.64,181.04 650.05,167.69 672.33,155.05 694.32,142.58 716.32,131.95 737.90,121.51 759.24,111.99 780.17,102.88 787.60,99.72 788.05,99.75 800.70,94.24" fill="none" stroke="#d84315" stroke-width="2.3" clip-path="url(#plot)"/>
+<circle cx="88.10" cy="344.64" r="2.1" fill="#d84315"/>
+<circle cx="101.12" cy="355.56" r="2.1" fill="#d84315"/>
+<circle cx="124.19" cy="369.03" r="2.1" fill="#d84315"/>
+<circle cx="147.32" cy="366.94" r="2.1" fill="#d84315"/>
+<circle cx="170.42" cy="358.04" r="2.1" fill="#d84315"/>
+<circle cx="193.36" cy="377.14" r="2.1" fill="#d84315"/>
+<circle cx="216.46" cy="365.02" r="2.1" fill="#d84315"/>
+<circle cx="239.45" cy="366.94" r="2.1" fill="#d84315"/>
+<circle cx="262.40" cy="373.48" r="2.1" fill="#d84315"/>
+<circle cx="285.43" cy="364.39" r="2.1" fill="#d84315"/>
+<circle cx="308.39" cy="367.55" r="2.1" fill="#d84315"/>
+<circle cx="331.35" cy="362.80" r="2.1" fill="#d84315"/>
+<circle cx="354.21" cy="358.56" r="2.1" fill="#d84315"/>
+<circle cx="377.29" cy="345.10" r="2.1" fill="#d84315"/>
+<circle cx="400.12" cy="333.91" r="2.1" fill="#d84315"/>
+<circle cx="422.90" cy="316.39" r="2.1" fill="#d84315"/>
+<circle cx="445.96" cy="305.52" r="2.1" fill="#d84315"/>
+<circle cx="468.73" cy="287.13" r="2.1" fill="#d84315"/>
+<circle cx="491.61" cy="271.94" r="2.1" fill="#d84315"/>
+<circle cx="514.42" cy="256.02" r="2.1" fill="#d84315"/>
+<circle cx="537.16" cy="239.85" r="2.1" fill="#d84315"/>
+<circle cx="559.92" cy="225.19" r="2.1" fill="#d84315"/>
+<circle cx="582.50" cy="209.16" r="2.1" fill="#d84315"/>
+<circle cx="605.13" cy="194.99" r="2.1" fill="#d84315"/>
+<circle cx="627.64" cy="181.04" r="2.1" fill="#d84315"/>
+<circle cx="650.05" cy="167.69" r="2.1" fill="#d84315"/>
+<circle cx="672.33" cy="155.05" r="2.1" fill="#d84315"/>
+<circle cx="694.32" cy="142.58" r="2.1" fill="#d84315"/>
+<circle cx="716.32" cy="131.95" r="2.1" fill="#d84315"/>
+<circle cx="737.90" cy="121.51" r="2.1" fill="#d84315"/>
+<circle cx="759.24" cy="111.99" r="2.1" fill="#d84315"/>
+<circle cx="780.17" cy="102.88" r="2.1" fill="#d84315"/>
+<circle cx="787.60" cy="99.72" r="2.1" fill="#d84315"/>
+<line x1="810" y1="93" x2="840" y2="93" stroke="#d84315" stroke-width="3"/>
+<text x="848" y="98" font-family="sans-serif" font-size="13">Current diode rectifier</text>
+<polyline points="78.06,413.58 88.05,414.32 88.10,411.70 101.15,411.49 124.37,419.84 147.45,414.22 170.45,419.60 193.53,381.28 216.54,402.95 239.48,394.69 262.45,384.45 285.39,390.38 308.53,398.76 331.33,365.97 354.26,357.94 377.37,378.83 400.08,339.98 423.14,343.23 445.88,316.38 468.83,307.15 491.70,293.49 514.35,272.54 537.14,258.66 559.93,245.79 582.70,232.74 605.16,215.64 627.74,201.82 650.18,187.47 672.30,171.64 694.53,158.27 716.30,143.58 737.96,129.93 759.25,116.26 780.18,102.79 787.58,97.91 787.93,97.67 800.69,89.46" fill="none" stroke="#1565c0" stroke-width="2.3" clip-path="url(#plot)"/>
+<circle cx="88.05" cy="414.32" r="2.1" fill="#1565c0"/>
+<circle cx="88.10" cy="411.70" r="2.1" fill="#1565c0"/>
+<circle cx="101.15" cy="411.49" r="2.1" fill="#1565c0"/>
+<circle cx="124.37" cy="419.84" r="2.1" fill="#1565c0"/>
+<circle cx="147.45" cy="414.22" r="2.1" fill="#1565c0"/>
+<circle cx="170.45" cy="419.60" r="2.1" fill="#1565c0"/>
+<circle cx="193.53" cy="381.28" r="2.1" fill="#1565c0"/>
+<circle cx="216.54" cy="402.95" r="2.1" fill="#1565c0"/>
+<circle cx="239.48" cy="394.69" r="2.1" fill="#1565c0"/>
+<circle cx="262.45" cy="384.45" r="2.1" fill="#1565c0"/>
+<circle cx="285.39" cy="390.38" r="2.1" fill="#1565c0"/>
+<circle cx="308.53" cy="398.76" r="2.1" fill="#1565c0"/>
+<circle cx="331.33" cy="365.97" r="2.1" fill="#1565c0"/>
+<circle cx="354.26" cy="357.94" r="2.1" fill="#1565c0"/>
+<circle cx="377.37" cy="378.83" r="2.1" fill="#1565c0"/>
+<circle cx="400.08" cy="339.98" r="2.1" fill="#1565c0"/>
+<circle cx="423.14" cy="343.23" r="2.1" fill="#1565c0"/>
+<circle cx="445.88" cy="316.38" r="2.1" fill="#1565c0"/>
+<circle cx="468.83" cy="307.15" r="2.1" fill="#1565c0"/>
+<circle cx="491.70" cy="293.49" r="2.1" fill="#1565c0"/>
+<circle cx="514.35" cy="272.54" r="2.1" fill="#1565c0"/>
+<circle cx="537.14" cy="258.66" r="2.1" fill="#1565c0"/>
+<circle cx="559.93" cy="245.79" r="2.1" fill="#1565c0"/>
+<circle cx="582.70" cy="232.74" r="2.1" fill="#1565c0"/>
+<circle cx="605.16" cy="215.64" r="2.1" fill="#1565c0"/>
+<circle cx="627.74" cy="201.82" r="2.1" fill="#1565c0"/>
+<circle cx="650.18" cy="187.47" r="2.1" fill="#1565c0"/>
+<circle cx="672.30" cy="171.64" r="2.1" fill="#1565c0"/>
+<circle cx="694.53" cy="158.27" r="2.1" fill="#1565c0"/>
+<circle cx="716.30" cy="143.58" r="2.1" fill="#1565c0"/>
+<circle cx="737.96" cy="129.93" r="2.1" fill="#1565c0"/>
+<circle cx="759.25" cy="116.26" r="2.1" fill="#1565c0"/>
+<circle cx="780.18" cy="102.79" r="2.1" fill="#1565c0"/>
+<circle cx="787.58" cy="97.91" r="2.1" fill="#1565c0"/>
+<circle cx="787.93" cy="97.67" r="2.1" fill="#1565c0"/>
+<line x1="810" y1="123" x2="840" y2="123" stroke="#1565c0" stroke-width="3"/>
+<text x="848" y="128" font-family="sans-serif" font-size="13">Previous analog switch</text>
+</svg>

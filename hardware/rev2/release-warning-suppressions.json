@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "suppressions": [
+    {
+      "id": "existing-front-silkscreen-strokes",
+      "tool": "drc",
+      "type": "assertion_failure",
+      "severity": "warning",
+      "description": "Assertion failure (rule 'JLCPCB: Silkscreen graphic stroke')",
+      "item_description_suffix": " on F.Silkscreen",
+      "rationale": "Approved for the existing released board; preserve its front silkscreen while testing the release harness."
+    }
+  ]
+}

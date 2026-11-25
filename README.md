@@ -1,14 +1,14 @@
 # VCO1
 
-Rev1 has a published manufacturing release. VCO1 is a voltage-controlled oscillator for a modular synthesizer.
+VCO1 is a voltage-controlled oscillator for a modular synthesizer. Rev1 has a published manufacturing release. Rev2 is a work in progress.
 
 > **AI use.** The authors use AI for additional validation, component research, testbench setup and simulation, intermediate design reviews, release setup, and assistance with KiCad and 3D model edits. The authors developed the original designs and schematics manually, and other people reviewed them. The authors make the technical and visual decisions and take responsibility for them.
 
 ## Goals and architecture
 
-VCO1 combines exponential pitch control with a CD40106B oscillator core and a buffered mix of saw and pulse waves. The front panel provides coarse and fine tuning, V/oct and attenuated FM inputs, and manual duty and PWM controls.
+Rev1 combines exponential pitch control with a CD40106B oscillator core and a buffered mix of saw and pulse waves. The front panel provides coarse and fine tuning, V/oct and attenuated FM inputs, and manual duty and PWM controls.
 
-The board accepts ±12 V through a 10-pin header. The 78L08 and 79L08 regulators supply the ±8 V analog rails. TL074 amplifiers handle control summing, signal conditioning, mixing, and indication. BC847C and BC857C transistors form part of the discrete control circuit. Test points and indicators support bring-up and calibration.
+Rev1 accepts ±12 V through a 10-pin header. The 78L08 and 79L08 regulators supply the ±8 V analog rails. TL074 amplifiers handle control summing, signal conditioning, mixing, and indication. BC847C and BC857C transistors form part of the discrete control circuit. Test points and indicators support bring-up and calibration.
 
 ```mermaid
 flowchart LR
@@ -23,6 +23,13 @@ flowchart LR
     CV["Protected CV inputs"] --> LEDs["Input indicators"]
     Power["±12 V power"] --> Rails["Protection, filtering and ±8 V regulation"]
 ```
+
+## Hardware projects
+
+| Board | Purpose | Design | Simulation |
+| --- | --- | --- | --- |
+| Rev1 | Saw and pulse oscillator with PWM | [KiCad project](hardware/rev1/vco1_rev1.kicad_pro) | |
+| Rev2 | Analog oscillator with saw, triangle, and sine shaping | [KiCad project](hardware/rev2/vco1_rev2.kicad_pro) | [ngspice bench](sim/rev2/README.md) |
 
 ## rev1
 
@@ -87,3 +94,9 @@ At first power-up, the oscillator core produced high-frequency, low-amplitude no
 - **Pulse duty cycle.** The control adjusted the pulse width smoothly and predictably over nearly the full 0–100% range.
 - **Output offset.** Changing the frequency produced a small baseline shift at the AC-coupled output.
 - **Pitch tracking.** Tuning was coarse and temperature-dependent, limiting its accuracy for musical intervals.
+
+## rev2
+
+Rev2 brings the former uVCO design into this repository. The oscillator uses a matched DMMT3904 transistor pair for exponential current control. An integrator generates a sawtooth ramp, and a comparator triggers the reset. A triangle shaper feeds the LM13700 sine shaper. The board accepts ±12 V and derives local reference rails.
+
+The [simulation bench](sim/rev2/README.md) includes oscillator frequency, sensitivity, and stability sweeps and a full oscillator-to-sine sweep with harmonic distortion measurements.

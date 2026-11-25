@@ -1,0 +1,7 @@
+build/
+results/c6_stability.md
+results/frequency_vs_cv.md
+results/sensitivity.md
+!results/full_signal_chain_thd.csv
+!results/full_signal_chain_comparison.csv
+!results/full_signal_chain_controls.csv

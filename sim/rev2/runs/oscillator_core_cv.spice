@@ -1,0 +1,85 @@
+* uVCO oscillator-core CV characterization.
+* The Python runner replaces the parameter line below for each operating point.
+.title uVCO oscillator core
+.include ../models/uvco_oscillator_models.lib
+
+.param CV=0 RTRIM=25.57k RPTC=10k CINT=10n C6COMP=100p VBE_DELTA=0 COMP_VOS=2m
+.param R11_VAL=1Meg R15_VAL=10k R16_VAL=10k R17_VAL=536k R3_VAL=100k R4_VAL=90.9k
+.param TSTOP=80m TSTART=20m TSTEP=200n TEMP_C=25
+.options tnom=25 method=gear reltol=1e-5 abstol=1e-12 vntol=1e-8 chgtol=1e-15
+.temp {TEMP_C}
+
+V12P +12V 0 12
+V12N 0 -12V 12
+V5 +5V 0 5
+V2V5 +2V5 0 2.5
+VCV CV 0 {CV}
+
+* CV inverter U9B.
+R16 CV cv_sum {R16_VAL}
+R15 cv_inv cv_sum {R15_VAL}
+C20 cv_inv cv_sum 100p
+XU9B cv_inv 0 cv_sum +12V -12V TPA1862_CH
+
+* Exponential scaling amplifier U9A and temperature-compensation network.
+R17 cv_inv scale_trim {R17_VAL}
+R13 scale_trim expo_sum {RTRIM}
+RTH expo_sum base_a {RPTC} tc1=0.0033
+C17 expo_sum base_a 100p
+R12 expo_drive base_a 1k
+XU9A expo_drive 0 expo_sum +12V -12V TPA1862_CH
+
+* Matched transistor pair and 5 uA reference servo U1A.
+VSENSE control_current q1a_c 0
+VBEM base_a base_device {VBE_DELTA}
+Q1A q1a_c base_device emit DI_DMMT3904W
+Q1B ref_col 0 emit DI_DMMT3904W
+R11 +5V ref_col {R11_VAL}
+R10 emit servo_out 1k
+C6 ref_col servo_out {C6COMP}
+XU1A servo_out 0 ref_col +12V -12V TPA1862_CH
+
+* Integrator U1B.
+C3 saw_raw control_current {CINT}
+XU1B saw_raw 0 control_current +12V -12V TPA1862_CH
+
+* TP1961 Schmitt comparator and 2N7002 reset switch.
+R4 saw_raw cmp_plus {R4_VAL}
+R3 cmp_out cmp_plus {R3_VAL}
+XU2 cmp_out cmp_plus +2V5 +5V 0 TP1961 VOS={COMP_VOS}
+R5 cmp_out reset_g 47
+R6 reset_g control_current 100k
+XQ2 reset_d reset_g control_current N7002
+R7 saw_raw reset_d 47
+
+* Correctly powered U4A level mapper and safely parked U4B follower.
+XU4A level saw_raw level_sum +12V -12V TL072_CH
+R18 level level_sum 10k
+R19 +2V5 level_sum 100k
+R14 level SAW 47
+RLOAD SAW 0 1Meg
+XU4B u4b_idle 0 u4b_idle +12V -12V TL072_CH
+
+* C7 and C33 are intentionally omitted because their schematic instances are DNP.
+.ic V(saw_raw)=0.2 V(cmp_out)=0 V(reset_g)=0 V(control_current)=0
+.save time v(CV) v(saw_raw) v(SAW) v(cmp_out) v(control_current) v(base_a) i(V5) i(VSENSE)
+.tran {TSTEP} {TSTOP} 0 {TSTEP} uic
+.measure tran p1 TRIG v(saw_raw) VAL=2.5 RISE=3 TARG v(saw_raw) VAL=2.5 RISE=4
+.measure tran p2 TRIG v(saw_raw) VAL=2.5 RISE=4 TARG v(saw_raw) VAL=2.5 RISE=5
+.measure tran p3 TRIG v(saw_raw) VAL=2.5 RISE=5 TARG v(saw_raw) VAL=2.5 RISE=6
+.measure tran p4 TRIG v(saw_raw) VAL=2.5 RISE=6 TARG v(saw_raw) VAL=2.5 RISE=7
+.measure tran period PARAM='(p1+p2+p3+p4)/4'
+.measure tran frequency PARAM='1/period'
+.measure tran startup_time WHEN v(saw_raw)=2.5 RISE=1
+.measure tran saw_min MIN v(saw_raw) FROM={TSTART} TO={TSTOP}
+.measure tran saw_max MAX v(saw_raw) FROM={TSTART} TO={TSTOP}
+.measure tran out_min MIN v(SAW) FROM={TSTART} TO={TSTOP}
+.measure tran out_max MAX v(SAW) FROM={TSTART} TO={TSTOP}
+.measure tran ictrl_avg AVG i(VSENSE) FROM={TSTART} TO={TSTOP}
+.measure tran ictrl_min MIN i(VSENSE) FROM={TSTART} TO={TSTOP}
+.measure tran ictrl_max MAX i(VSENSE) FROM={TSTART} TO={TSTOP}
+.measure tran ref_min MIN v(ref_col) FROM={TSTART} TO={TSTOP}
+.measure tran ref_max MAX v(ref_col) FROM={TSTART} TO={TSTOP}
+.measure tran servo_min MIN v(servo_out) FROM={TSTART} TO={TSTOP}
+.measure tran servo_max MAX v(servo_out) FROM={TSTART} TO={TSTOP}
+.end
