@@ -42046,7 +42046,7 @@
 		(uuid "7138167f-b332-43c8-998f-878e272b6b40")
 	)
 	(gr_text "uvco rev1\nJuly, 2026. Coestaris\nBUILD 888888"
-		(at 96 153 0)
+		(at 116.5 109.5 0)
 		(layer "F.SilkS" knockout)
 		(uuid "dfca865a-18f9-4bec-b782-5f166c47ad33")
 		(effects
