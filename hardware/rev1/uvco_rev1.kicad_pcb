@@ -959,7 +959,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/182f5059-017b-4f38-ba77-df93b7061f20")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1652,7 +1652,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/f9d16386-b13b-4276-8e2f-7b373eaa8a57")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2774,7 +2774,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(path "/3831768c-914d-4780-80b1-7d82baab37c8")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3470,7 +3470,7 @@
 		(property ki_fp_filters "SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm* MSOP*3x3mm*P0.5mm*")
 		(path "/8d71480e-66de-4360-8b3b-ab1e4a0ce924")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3863,7 +3863,7 @@
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/8a35e2b3-dd18-447b-b263-b7c166f4d0d1")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4355,7 +4355,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/56c42db1-725f-498a-882a-89ae3e02d18e")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4513,7 +4513,7 @@
 		(property ki_fp_filters "CP_*")
 		(path "/c9ccbc9f-c4c9-47d0-a9d9-e073f7731a1e")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7557,7 +7557,7 @@
 		(property ki_fp_filters "SOT?89*")
 		(path "/fe754a9b-d5c9-428a-bbd0-060b7c547f88")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8596,7 +8596,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/0709e133-4405-47ca-a952-9313ee0d80fc")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -9810,7 +9810,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(path "/41985ec5-d12e-43fe-a122-dd93fb902808")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -10005,7 +10005,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/1387df23-9463-4822-8235-fd9fa6dbfa3c")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -11966,7 +11966,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/ba9442ec-76f8-4826-bc52-6ee86ce1770e")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -12539,7 +12539,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/53ee3cda-490b-4114-aab0-7a08a00d92fd")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -15688,7 +15688,7 @@
 		(property ki_fp_filters "D*DO?41*")
 		(path "/449de103-dc9e-4160-90f1-cc31611c9f59")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -15998,7 +15998,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/64f8770c-6458-4d6b-ae70-19e739ed8ce3")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -16168,7 +16168,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/49f29ad9-7ee6-4f61-812e-b0f497a1ac08")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -16338,7 +16338,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/db37179c-93a2-4eaf-8155-5ab15d002785")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -19756,7 +19756,7 @@
 		(property ki_fp_filters "SOT?89*")
 		(path "/58ea69a6-1bc7-4ac6-b381-eb7b05b4833e")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -20104,7 +20104,7 @@
 		(property ki_fp_filters "CP_*")
 		(path "/de521cb0-ee2f-478b-a5ce-401efdbc94f7")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -23053,7 +23053,7 @@
 		(property ki_fp_filters "SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm* MSOP*3x3mm*P0.5mm*")
 		(path "/d109883c-7a6d-44e0-8c4a-4a0fcf41d32d")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -24338,7 +24338,7 @@
 		(property ki_fp_filters "CP_*")
 		(path "/f7648bbd-4349-4de4-b909-43b82ac9b503")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -26430,7 +26430,7 @@
 		(property ki_fp_filters "CP_*")
 		(path "/a4e399f4-7886-4ca4-af5b-755f39a31e33")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -30749,7 +30749,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/de6530e9-5b6a-4d14-89a7-56e2e21af456")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -32697,7 +32697,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/cba6d229-9538-4bcd-bfb5-cfb09f533653")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -33602,7 +33602,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/5f9e4ea0-1858-4424-bc4d-45ed40e8fa5a")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -34961,7 +34961,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/edd4d86e-8ba2-418e-8cb0-397c53e02ebc")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -36053,7 +36053,7 @@
 		(property ki_fp_filters "SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm* MSOP*3x3mm*P0.5mm*")
 		(path "/5e77e5fa-fd63-4a63-b553-47ac383de96c")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -36458,7 +36458,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/4d7d745f-21cd-4f0f-a010-1aa8de76bf9a")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -36891,7 +36891,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/f8d7d0e9-ffa1-4a52-bb37-2a8d5115fdc4")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -37399,7 +37399,7 @@
 		(property ki_fp_filters "D*DO?41*")
 		(path "/3c27b991-3177-46dc-99fc-62f1f05d5409")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -38282,7 +38282,7 @@
 		(property ki_fp_filters "SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm* MSOP*3x3mm*P0.5mm*")
 		(path "/b76d426d-851c-4ff3-99d8-913708b7d253")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -38837,7 +38837,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(path "/ce6af7c4-fd51-47ab-94f2-d1584fd63668")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -39372,7 +39372,7 @@
 		(property ki_fp_filters "DIP?14*")
 		(path "/80e87786-3eb5-432b-a2d0-5037184ab916")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -41297,7 +41297,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/1a5e149e-3ee3-438a-8547-2fd24dcc636e")
 		(sheetname "/Power/")
-		(sheetfile "vco1_rev1.kicad_sch")
+		(sheetfile "uvco_rev1.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -42045,7 +42045,7 @@
 		(layer "User.1")
 		(uuid "7138167f-b332-43c8-998f-878e272b6b40")
 	)
-	(gr_text "VCO1. rev1\nJuly, 2026. Coestaris\nBUILD 888888"
+	(gr_text "uvco rev1\nJuly, 2026. Coestaris\nBUILD 888888"
 		(at 96 153 0)
 		(layer "F.SilkS" knockout)
 		(uuid "dfca865a-18f9-4bec-b782-5f166c47ad33")

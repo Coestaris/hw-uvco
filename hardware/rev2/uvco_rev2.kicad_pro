@@ -490,7 +490,7 @@
     ]
   },
   "meta": {
-    "filename": "vco1_rev2.kicad_pro",
+    "filename": "uvco_rev2.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -700,8 +700,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "vco1_rev2.kicad_sch",
-        "name": "uVCO",
+        "filename": "uvco_rev2.kicad_sch",
+        "name": "uvco rev2",
         "uuid": "e726ea25-db5c-4910-85ad-b5507bcdff70"
       }
     ],
@@ -711,7 +711,7 @@
   "sheets": [
     [
       "e726ea25-db5c-4910-85ad-b5507bcdff70",
-      "uVCO"
+      "uvco rev2"
     ]
   ],
   "text_variables": {},

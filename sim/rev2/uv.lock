@@ -165,7 +165,7 @@ wheels = [
 ]
 
 [[package]]
-name = "vco1-rev2-simulation"
+name = "uvco-rev2-simulation"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

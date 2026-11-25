@@ -5,7 +5,7 @@
 	(uuid "7ac9de4c-c7d3-468e-89ce-7ec2a0c70a9f")
 	(paper "A4")
 	(title_block
-		(title "Oscillator v1")
+		(title "uvco rev1")
 		(date "2026-07-09")
 		(rev "1")
 		(company "@coestaris, kurylko.maxim@gmail.com")
@@ -3882,13 +3882,13 @@
 			(uuid "fa910edd-9573-47a0-9534-7d2e55a74468")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "R4")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "R4")
 					(unit 1)
@@ -3967,13 +3967,13 @@
 			(uuid "9d50f21c-0ca5-48bd-a09b-5645166647c7")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "TP4")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "TP4")
 					(unit 1)
@@ -4051,13 +4051,13 @@
 			(uuid "0df91ee5-a955-44e8-a6a3-b20594491506")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "#PWR040")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "#PWR040")
 					(unit 1)
@@ -4136,13 +4136,13 @@
 			(uuid "336b9c6a-cc93-49eb-949f-7b9edf7203cd")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "TP5")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "TP5")
 					(unit 1)
@@ -4254,13 +4254,13 @@
 			(uuid "e6d53eda-04eb-46f4-aca9-64245669383d")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "D3")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "D3")
 					(unit 1)
@@ -4338,13 +4338,13 @@
 			(uuid "edeaecdc-1598-4f30-8619-bd0ffe853e69")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "#PWR037")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "#PWR037")
 					(unit 1)
@@ -4423,13 +4423,13 @@
 			(uuid "1cdcf92e-b296-413f-9ef1-6b6aac537f23")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "TP8")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "TP8")
 					(unit 1)
@@ -4545,13 +4545,13 @@
 			(uuid "aae03546-4b90-4a0f-9896-1a91fdeaef9f")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "U1")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "U1")
 					(unit 1)
@@ -4651,13 +4651,13 @@
 			(uuid "f5daa72a-9c41-4886-ab69-60eeff3d9ade")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "R3")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "R3")
 					(unit 1)
@@ -4774,13 +4774,13 @@
 			(uuid "55c5c84b-bc0a-4ec2-9200-5882cfba29fc")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "RV1")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "RV1")
 					(unit 1)
@@ -4895,13 +4895,13 @@
 			(uuid "21a9e2d3-7d9a-4fb3-a48b-68718e403fbe")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "U7")
 					(unit 4)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "U7")
 					(unit 4)
@@ -4979,13 +4979,13 @@
 			(uuid "a05d5131-328b-4e11-8cf0-4fd43c5187e3")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "#PWR036")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "#PWR036")
 					(unit 1)
@@ -5108,13 +5108,13 @@
 			(uuid "5b05510e-230d-4b7e-90ec-5f7c888c6b7a")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "Q1")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "Q1")
 					(unit 1)
@@ -5230,13 +5230,13 @@
 			(uuid "e83d1978-01ae-443d-8fea-c2d4165ff6a3")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "U1")
 					(unit 2)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "U1")
 					(unit 2)
@@ -5336,13 +5336,13 @@
 			(uuid "e85f6825-1e4e-4842-a882-165ad60f8aed")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "R8")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "R8")
 					(unit 1)
@@ -5465,13 +5465,13 @@
 			(uuid "ed57b937-cd59-43b6-9272-628af5ad2677")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "Q2")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "Q2")
 					(unit 1)
@@ -5586,13 +5586,13 @@
 			(uuid "f1fc600e-da2a-4f6d-b981-e69f6e050917")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "U3")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "U3")
 					(unit 1)
@@ -5692,13 +5692,13 @@
 			(uuid "c1e2e78b-b9de-4359-8fef-95ec6ba08525")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "R5")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "R5")
 					(unit 1)
@@ -5776,13 +5776,13 @@
 			(uuid "dba41788-518d-49cb-9c70-39f4174b9c43")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "#PWR038")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "#PWR038")
 					(unit 1)
@@ -5882,13 +5882,13 @@
 			(uuid "bd72e7b0-e95d-436b-a484-72688460f8d2")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "R9")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "R9")
 					(unit 1)
@@ -5988,13 +5988,13 @@
 			(uuid "28459560-445d-4e8e-bea4-9e767ef1bb16")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "R7")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "R7")
 					(unit 1)
@@ -6096,13 +6096,13 @@
 			(uuid "9a26bd8b-a814-4f43-944c-b8e0989223b7")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "R6")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "R6")
 					(unit 1)
@@ -6179,13 +6179,13 @@
 			(uuid "14b89863-613d-4a2d-8f20-3a66d98aaca1")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "#PWR032")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "#PWR032")
 					(unit 1)
@@ -6262,13 +6262,13 @@
 			(uuid "d96a5ae8-0d90-4081-9622-ba5649d2f5b3")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "#PWR031")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "#PWR031")
 					(unit 1)
@@ -6370,13 +6370,13 @@
 			(uuid "8697b895-a578-4906-8aab-2fd6abb33699")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "R12")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "R12")
 					(unit 1)
@@ -6478,13 +6478,13 @@
 			(uuid "b72e1fa1-442f-4ecf-b7cd-8d1c79f5e567")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "R11")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "R11")
 					(unit 1)
@@ -6565,13 +6565,13 @@
 			(uuid "49efc71d-9595-4631-82dc-0110826ce940")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "C20")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "C20")
 					(unit 1)
@@ -6663,13 +6663,13 @@
 			(uuid "86b2cb37-8f78-426c-9d78-543460046ea4")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "R14")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "R14")
 					(unit 1)
@@ -6769,13 +6769,13 @@
 			(uuid "d5855ee8-741a-4bea-a9bc-4193f3dfb76f")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "R10")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "R10")
 					(unit 1)
@@ -6853,13 +6853,13 @@
 			(uuid "77d40dfd-d354-47f2-a2f2-1c201b375fe2")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "#PWR039")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "#PWR039")
 					(unit 1)
@@ -6975,13 +6975,13 @@
 			(uuid "aae03546-4b90-4a0f-9896-1a91fdeaefa0")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "U1")
 					(unit 3)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "U1")
 					(unit 3)
@@ -7097,13 +7097,13 @@
 			(uuid "aae03546-4b90-4a0f-9896-1a91fdeaefa1")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "U1")
 					(unit 4)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "U1")
 					(unit 4)
@@ -7181,13 +7181,13 @@
 			(uuid "8364a4bd-d16d-4383-89be-da16679a035c")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "#PWR035")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "#PWR035")
 					(unit 1)
@@ -7265,13 +7265,13 @@
 			(uuid "e7d290d6-4eab-4d88-921d-17afd31754a6")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "#PWR033")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "#PWR033")
 					(unit 1)
@@ -7386,13 +7386,13 @@
 			(uuid "92fe5d3a-2bb8-488b-92de-9aadc87395b2")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "U7")
 					(unit 3)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "U7")
 					(unit 3)
@@ -7494,13 +7494,13 @@
 			(uuid "fe7b5a54-7ad9-4707-a877-25bbe113be09")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "R13")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "R13")
 					(unit 1)
@@ -7578,13 +7578,13 @@
 			(uuid "8e90a018-6aa8-4373-801b-c872a7c96c08")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "#PWR034")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "#PWR034")
 					(unit 1)
@@ -7663,13 +7663,13 @@
 			(uuid "38d40157-d2e4-4efa-91b4-3f3e4f55542f")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "TP6")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "TP6")
 					(unit 1)
@@ -7761,13 +7761,13 @@
 			(uuid "2da6c270-1ede-4075-ae0d-56b4a6c2bd12")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "C21")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "C21")
 					(unit 1)
@@ -7846,13 +7846,13 @@
 			(uuid "b3be8bb0-bf4e-4c18-b183-89e3b5c2a087")
 		)
 		(instances
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/50ab8775-b9c2-46d4-8586-1c17127e8f9a/c17cfd3c-3a93-46b8-88b6-847b6404bfa6"
 					(reference "TP7")
 					(unit 1)
 				)
 			)
-			(project "vco1_rev1"
+			(project "uvco_rev1"
 				(path "/7fabaee8-867f-4e30-a887-7f797976644e"
 					(reference "TP7")
 					(unit 1)

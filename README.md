@@ -2,15 +2,15 @@
 
 > **AI use.** The authors use AI for additional validation, component research, testbench setup and simulation, intermediate design reviews, release setup, and assistance with KiCad and 3D model edits. The authors developed the original designs and schematics manually, and other people reviewed them. The authors make the technical and visual decisions and take responsibility for them.
 
-VCO1 is a voltage-controlled oscillator for a modular synthesizer.
+uvco is a voltage-controlled oscillator for a modular synthesizer.
 Rev1 has a published manufacturing release. Rev2 is a work in progress.
 
 ## Hardware projects
 
 | Board | Purpose | Design | Simulation |
 | --- | --- | --- | --- |
-| Rev1 | Saw and pulse oscillator with PWM | [KiCad project](hardware/rev1/vco1_rev1.kicad_pro) | |
-| Rev2 | Analog oscillator with saw, triangle, and sine shaping | [KiCad project](hardware/rev2/vco1_rev2.kicad_pro) | [ngspice bench](sim/rev2/) |
+| Rev1 | Saw and pulse oscillator with PWM | [KiCad project](hardware/rev1/uvco_rev1.kicad_pro) | |
+| Rev2 | Analog oscillator with saw, triangle, and sine shaping | [KiCad project](hardware/rev2/uvco_rev2.kicad_pro) | [ngspice bench](sim/rev2/) |
 
 ## rev1
 
@@ -33,31 +33,29 @@ flowchart LR
     Power["±12 V power"] --> Rails["Protection, filtering and ±8 V regulation"]
 ```
 
-Release [Rev1 release](https://github.com/Coestaris/hw-vco1/releases/tag/rev1)
+[Rev1 release](https://github.com/Coestaris/hw-uvco/releases/tag/rev1)
 
-![VCO1 Rev1, perspective view](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-3d-corner.png)
+![uvco Rev1, perspective view](https://github.com/Coestaris/hw-uvco/releases/download/rev1/uvco_rev1-3d-corner.png)
 
 <details>
 <summary>Top and bottom views</summary>
 
-![VCO1 Rev1, top view](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-3d-top.png)
+![uvco Rev1, top view](https://github.com/Coestaris/hw-uvco/releases/download/rev1/uvco_rev1-3d-top.png)
 
-![VCO1 Rev1, bottom view](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-3d-bottom.png)
+![uvco Rev1, bottom view](https://github.com/Coestaris/hw-uvco/releases/download/rev1/uvco_rev1-3d-bottom.png)
 
 </details>
 
 | File | Download |
 | --- | --- |
-| Schematic PDF | [vco1_rev1-schematic.pdf](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-schematic.pdf) |
-| PCB PDF | [vco1_rev1-pcb.pdf](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-pcb.pdf) |
-| Gerbers and drill files | [vco1_rev1-gerbers.zip](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-gerbers.zip) |
-| JLCPCB BOM | [vco1_rev1-jlcpcb-bom.csv](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-jlcpcb-bom.csv) |
-| JLCPCB placement | [vco1_rev1-jlcpcb-pnp.csv](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-jlcpcb-pnp.csv) |
-| 3D assembly model | [vco1_rev1.stpz](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1.stpz) |
+| Schematic PDF | [uvco_rev1-schematic.pdf](https://github.com/Coestaris/hw-uvco/releases/download/rev1/uvco_rev1-schematic.pdf) |
+| PCB PDF | [uvco_rev1-pcb.pdf](https://github.com/Coestaris/hw-uvco/releases/download/rev1/uvco_rev1-pcb.pdf) |
+| Gerbers and drill files | [uvco_rev1-gerbers.zip](https://github.com/Coestaris/hw-uvco/releases/download/rev1/uvco_rev1-gerbers.zip) |
+| JLCPCB BOM | [uvco_rev1-jlcpcb-bom.csv](https://github.com/Coestaris/hw-uvco/releases/download/rev1/uvco_rev1-jlcpcb-bom.csv) |
+| JLCPCB placement | [uvco_rev1-jlcpcb-pnp.csv](https://github.com/Coestaris/hw-uvco/releases/download/rev1/uvco_rev1-jlcpcb-pnp.csv) |
+| 3D assembly model | [uvco_rev1.stpz](https://github.com/Coestaris/hw-uvco/releases/download/rev1/uvco_rev1.stpz) |
 
 #### Hardware bring-up
-
-![Assembled VCO1 Rev1 prototype on the bench](assets/rev1/bring-up/assembled-board.jpg)
 
 At first power-up, the oscillator core produced high-frequency, low-amplitude noise, with almost no signal at the output. The prototype needed three fixes.
 
@@ -97,6 +95,6 @@ At first power-up, the oscillator core produced high-frequency, low-amplitude no
 
 ## rev2
 
-Rev2 brings the former uVCO design into this repository. The oscillator uses a matched DMMT3904 transistor pair for exponential current control. An integrator generates a sawtooth ramp, and a comparator triggers the reset. A triangle shaper feeds the LM13700 sine shaper. The board accepts ±12 V and derives local reference rails.
+The Rev2 oscillator uses a matched DMMT3904 transistor pair for exponential current control. An integrator generates a sawtooth ramp, and a comparator triggers the reset. A triangle shaper feeds the LM13700 sine shaper. The design accepts ±12 V and derives local reference rails.
 
 The ngspice bench includes frequency, sensitivity, and stability sweeps. The full oscillator-to-sine simulation sustained oscillation at all 37 control-voltage points tested.

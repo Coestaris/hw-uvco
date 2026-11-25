@@ -1,7 +1,7 @@
 [project]
-name = "vco1-rev2-simulation"
+name = "uvco-rev2-simulation"
 version = "0.1.0"
-description = "VCO1 Rev2 ngspice analyses"
+description = "uvco rev2 ngspice analyses"
 requires-python = ">=3.11"
 dependencies = [
     "numpy>=2.0",

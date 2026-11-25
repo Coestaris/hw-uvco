@@ -506,7 +506,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "vco1_rev1.kicad_pro",
+    "filename": "uvco_rev1.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -698,8 +698,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "vco1_rev1.kicad_sch",
-        "name": "Oscillator v1",
+        "filename": "uvco_rev1.kicad_sch",
+        "name": "uvco rev1",
         "uuid": "50ab8775-b9c2-46d4-8586-1c17127e8f9a"
       }
     ],
@@ -709,7 +709,7 @@
   "sheets": [
     [
       "50ab8775-b9c2-46d4-8586-1c17127e8f9a",
-      "Oscillator v1"
+      "uvco rev1"
     ],
     [
       "c17cfd3c-3a93-46b8-88b6-847b6404bfa6",

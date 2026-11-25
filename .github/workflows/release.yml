@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       target:
-        description: Hardware release target (rev1)
+        description: Hardware release target (rev1 or rev2)
         required: true
         type: string
       refresh:
@@ -59,7 +59,7 @@ jobs:
           key="$(jq -er 'select(.status == "ok") | .data.key' "$RUNNER_TEMP/project.json")"
           hardware="$(jq -er '.data.hardware' "$RUNNER_TEMP/project.json")"
           tag="${hardware##*/}"
-          printf 'key=%s\nname=%s\nhardware=%s\ntag=%s\n' "$key" "$name" "$hardware" "$tag" >> "$GITHUB_OUTPUT"
+          printf 'key=%s\nhardware=%s\ntag=%s\n' "$key" "$hardware" "$tag" >> "$GITHUB_OUTPUT"
       - name: Check release publication state
         id: publication
         env:
@@ -142,14 +142,13 @@ jobs:
           retention-days: 30
       - name: Build release notes
         env:
-          PROJECT_NAME: ${{ steps.project.outputs.name }}
           RELEASE_TAG: ${{ steps.project.outputs.tag }}
           INFRA_SHA: ${{ steps.pin.outputs.sha }}
           REFRESH: ${{ steps.publication.outputs.exists }}
         run: |
           notes="$RUNNER_TEMP/release/notes.md"
           {
-            printf '# %s %s\n\n' "$PROJECT_NAME" "$RELEASE_TAG"
+            printf '# %s\n\n' "$RELEASE_TAG"
             printf 'Full release gate and artifact export passed.\n\n'
             if [[ "$REFRESH" == true ]]; then
               printf 'Assets regenerated after verifying unchanged design sources; the original tag is preserved.\n\n'
@@ -165,15 +164,14 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RELEASE_TAG: ${{ steps.project.outputs.tag }}
-          PROJECT_NAME: ${{ steps.project.outputs.name }}
           EXISTS: ${{ steps.publication.outputs.exists }}
         run: |
           if [[ "$EXISTS" == true ]]; then
             gh release upload "$RELEASE_TAG" "$RUNNER_TEMP"/release/artifacts/* --clobber
-            gh release edit "$RELEASE_TAG" --title "$PROJECT_NAME $RELEASE_TAG" \
+            gh release edit "$RELEASE_TAG" --title "$RELEASE_TAG" \
               --notes-file "$RUNNER_TEMP/release/notes.md" --latest
           else
             gh release create "$RELEASE_TAG" "$RUNNER_TEMP"/release/artifacts/* \
-            --target "$GITHUB_SHA" --title "$PROJECT_NAME $RELEASE_TAG" \
-            --notes-file "$RUNNER_TEMP/release/notes.md" --latest
+              --target "$GITHUB_SHA" --title "$RELEASE_TAG" \
+              --notes-file "$RUNNER_TEMP/release/notes.md" --latest
           fi
