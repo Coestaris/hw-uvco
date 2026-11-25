@@ -1,10 +1,19 @@
 # VCO1
 
-VCO1 is a voltage-controlled oscillator for a modular synthesizer. Rev1 has a published manufacturing release. Rev2 is a work in progress.
-
 > **AI use.** The authors use AI for additional validation, component research, testbench setup and simulation, intermediate design reviews, release setup, and assistance with KiCad and 3D model edits. The authors developed the original designs and schematics manually, and other people reviewed them. The authors make the technical and visual decisions and take responsibility for them.
 
-## Goals and architecture
+VCO1 is a voltage-controlled oscillator for a modular synthesizer.
+Rev1 has a published manufacturing release. Rev2 is a work in progress.
+
+## Hardware projects
+
+| Board | Purpose | Design | Simulation |
+| --- | --- | --- | --- |
+| Rev1 | Saw and pulse oscillator with PWM | [KiCad project](hardware/rev1/vco1_rev1.kicad_pro) | |
+| Rev2 | Analog oscillator with saw, triangle, and sine shaping | [KiCad project](hardware/rev2/vco1_rev2.kicad_pro) | [ngspice bench](sim/rev2/) |
+
+## rev1
+
 
 Rev1 combines exponential pitch control with a CD40106B oscillator core and a buffered mix of saw and pulse waves. The front panel provides coarse and fine tuning, V/oct and attenuated FM inputs, and manual duty and PWM controls.
 
@@ -24,16 +33,7 @@ flowchart LR
     Power["±12 V power"] --> Rails["Protection, filtering and ±8 V regulation"]
 ```
 
-## Hardware projects
-
-| Board | Purpose | Design | Simulation |
-| --- | --- | --- | --- |
-| Rev1 | Saw and pulse oscillator with PWM | [KiCad project](hardware/rev1/vco1_rev1.kicad_pro) | |
-| Rev2 | Analog oscillator with saw, triangle, and sine shaping | [KiCad project](hardware/rev2/vco1_rev2.kicad_pro) | [ngspice bench](sim/rev2/README.md) |
-
-## rev1
-
-Rev1 groups power, signal generation, panel I/O, and indicators on four schematic sheets. [Rev1 release](https://github.com/Coestaris/hw-vco1/releases/tag/rev1)
+Release [Rev1 release](https://github.com/Coestaris/hw-vco1/releases/tag/rev1)
 
 ![VCO1 Rev1, perspective view](https://github.com/Coestaris/hw-vco1/releases/download/rev1/vco1_rev1-3d-corner.png)
 
@@ -99,4 +99,4 @@ At first power-up, the oscillator core produced high-frequency, low-amplitude no
 
 Rev2 brings the former uVCO design into this repository. The oscillator uses a matched DMMT3904 transistor pair for exponential current control. An integrator generates a sawtooth ramp, and a comparator triggers the reset. A triangle shaper feeds the LM13700 sine shaper. The board accepts ±12 V and derives local reference rails.
 
-The [simulation bench](sim/rev2/README.md) includes oscillator frequency, sensitivity, and stability sweeps and a full oscillator-to-sine sweep with harmonic distortion measurements.
+The ngspice bench includes frequency, sensitivity, and stability sweeps. The full oscillator-to-sine simulation sustained oscillation at all 37 control-voltage points tested.
